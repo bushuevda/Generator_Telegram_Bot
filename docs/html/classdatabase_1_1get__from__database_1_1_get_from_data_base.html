@@ -1,0 +1,999 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Генераторт телеграм бота: Класс database.get_from_database.GetFromDataBase</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Генераторт телеграм бота<span id="projectnumber">&#160;1.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacedatabase.html">database</a></li><li class="navelem"><a class="el" href="namespacedatabase_1_1get__from__database.html">get_from_database</a></li><li class="navelem"><a class="el" href="classdatabase_1_1get__from__database_1_1_get_from_data_base.html">GetFromDataBase</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pub-attribs">Открытые атрибуты</a> &#124;
+<a href="classdatabase_1_1get__from__database_1_1_get_from_data_base-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle"><div class="title">Класс database.get_from_database.GetFromDataBase</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Класс получения информации из базы данных.  
+ <a href="#details">Подробнее...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:aae60c5350685115a3deb657fd25d6081" id="r_aae60c5350685115a3deb657fd25d6081"><td class="memItemLeft" align="right" valign="top">None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aae60c5350685115a3deb657fd25d6081">__init__</a> (self, str name_db)</td></tr>
+<tr class="separator:aae60c5350685115a3deb657fd25d6081"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0414f8e2d1218ec46c5b49fcf55bee47" id="r_a0414f8e2d1218ec46c5b49fcf55bee47"><td class="memItemLeft" align="right" valign="top">list[str]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0414f8e2d1218ec46c5b49fcf55bee47">get_list_keyboards_reply</a> (self, list[list] data_menu_reply)</td></tr>
+<tr class="memdesc:a0414f8e2d1218ec46c5b49fcf55bee47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения списка линий кнопок для меню reply.  <br /></td></tr>
+<tr class="separator:a0414f8e2d1218ec46c5b49fcf55bee47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adca07c0fea035ac74e1ef505b79981ae" id="r_adca07c0fea035ac74e1ef505b79981ae"><td class="memItemLeft" align="right" valign="top">list[str]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adca07c0fea035ac74e1ef505b79981ae">get_list_keyboards_inline</a> (self, str name_menu)</td></tr>
+<tr class="memdesc:adca07c0fea035ac74e1ef505b79981ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения списка линий кнопок для меню inline.  <br /></td></tr>
+<tr class="separator:adca07c0fea035ac74e1ef505b79981ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae476aeccc5557b2de4d98682f9df8214" id="r_ae476aeccc5557b2de4d98682f9df8214"><td class="memItemLeft" align="right" valign="top">set&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae476aeccc5557b2de4d98682f9df8214">get_key_words</a> (self, str name_menu)</td></tr>
+<tr class="memdesc:ae476aeccc5557b2de4d98682f9df8214"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения ключевых слов для меню.  <br /></td></tr>
+<tr class="separator:ae476aeccc5557b2de4d98682f9df8214"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5dc0f5d50bfd27f38067bd69bb5b08a9" id="r_a5dc0f5d50bfd27f38067bd69bb5b08a9"><td class="memItemLeft" align="right" valign="top">list[str]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5dc0f5d50bfd27f38067bd69bb5b08a9">get_list_path_images</a> (self, str name_menu)</td></tr>
+<tr class="memdesc:a5dc0f5d50bfd27f38067bd69bb5b08a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения списка путей к изображениям для меню.  <br /></td></tr>
+<tr class="separator:a5dc0f5d50bfd27f38067bd69bb5b08a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae70eecf2a585d26a689ce9cdf375634e" id="r_ae70eecf2a585d26a689ce9cdf375634e"><td class="memItemLeft" align="right" valign="top">list[str]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae70eecf2a585d26a689ce9cdf375634e">get_list_text</a> (self, str name_menu)</td></tr>
+<tr class="memdesc:ae70eecf2a585d26a689ce9cdf375634e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения списка теста для меню.  <br /></td></tr>
+<tr class="separator:ae70eecf2a585d26a689ce9cdf375634e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97332c730cc4417f9ab9356efd18e806" id="r_a97332c730cc4417f9ab9356efd18e806"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a97332c730cc4417f9ab9356efd18e806">get_text</a> (self, str name_menu)</td></tr>
+<tr class="memdesc:a97332c730cc4417f9ab9356efd18e806"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения теста для меню.  <br /></td></tr>
+<tr class="separator:a97332c730cc4417f9ab9356efd18e806"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee66a05c1d644768729c2cf050a1eecb" id="r_aee66a05c1d644768729c2cf050a1eecb"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aee66a05c1d644768729c2cf050a1eecb">get_path_file</a> (self, str name_menu)</td></tr>
+<tr class="memdesc:aee66a05c1d644768729c2cf050a1eecb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения пути к файлу для меню.  <br /></td></tr>
+<tr class="separator:aee66a05c1d644768729c2cf050a1eecb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a348ff384c582cfadfc088f22d85c96e1" id="r_a348ff384c582cfadfc088f22d85c96e1"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a348ff384c582cfadfc088f22d85c96e1">get_path_image</a> (self, str name_menu)</td></tr>
+<tr class="memdesc:a348ff384c582cfadfc088f22d85c96e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения пути к изображению для меню.  <br /></td></tr>
+<tr class="separator:a348ff384c582cfadfc088f22d85c96e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab22763fb62e2b3775dcaad75c0ddb090" id="r_ab22763fb62e2b3775dcaad75c0ddb090"><td class="memItemLeft" align="right" valign="top">dict&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab22763fb62e2b3775dcaad75c0ddb090">get_users</a> (self)</td></tr>
+<tr class="memdesc:ab22763fb62e2b3775dcaad75c0ddb090"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения словаря пользователей.  <br /></td></tr>
+<tr class="separator:ab22763fb62e2b3775dcaad75c0ddb090"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78b729ab69a5a2775d1eab95bff828d8" id="r_a78b729ab69a5a2775d1eab95bff828d8"><td class="memItemLeft" align="right" valign="top">object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a78b729ab69a5a2775d1eab95bff828d8">get_function_anecdot</a> (self)</td></tr>
+<tr class="memdesc:a78b729ab69a5a2775d1eab95bff828d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция возвращающая функцию получения анекдота по id анекдоту.  <br /></td></tr>
+<tr class="separator:a78b729ab69a5a2775d1eab95bff828d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf69e3bbfdbdc6d939ddf597b7c93fbd" id="r_abf69e3bbfdbdc6d939ddf597b7c93fbd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abf69e3bbfdbdc6d939ddf597b7c93fbd">get_len_list_anecdotes</a> (self)</td></tr>
+<tr class="memdesc:abf69e3bbfdbdc6d939ddf597b7c93fbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения количества анектодов в базе данных.  <br /></td></tr>
+<tr class="separator:abf69e3bbfdbdc6d939ddf597b7c93fbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Открытые атрибуты</h2></td></tr>
+<tr class="memitem:a765ebca82f5576d65ea9307d897c7dd2" id="r_a765ebca82f5576d65ea9307d897c7dd2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a765ebca82f5576d65ea9307d897c7dd2">state</a></td></tr>
+<tr class="memdesc:a765ebca82f5576d65ea9307d897c7dd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Флаг для формирования списка кнопок  <br /></td></tr>
+<tr class="separator:a765ebca82f5576d65ea9307d897c7dd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb3ffc8e1f015a0a4668b1013df49a42" id="r_adb3ffc8e1f015a0a4668b1013df49a42"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adb3ffc8e1f015a0a4668b1013df49a42">table_button</a></td></tr>
+<tr class="memdesc:adb3ffc8e1f015a0a4668b1013df49a42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Объект класса Button.  <br /></td></tr>
+<tr class="separator:adb3ffc8e1f015a0a4668b1013df49a42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6df7c7282b80e02846fd03f17af522d6" id="r_a6df7c7282b80e02846fd03f17af522d6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6df7c7282b80e02846fd03f17af522d6">table_category_user</a></td></tr>
+<tr class="memdesc:a6df7c7282b80e02846fd03f17af522d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Объект класса CategoryUsers.  <br /></td></tr>
+<tr class="separator:a6df7c7282b80e02846fd03f17af522d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88a155473ce62e0ca564b9d27f4ed051" id="r_a88a155473ce62e0ca564b9d27f4ed051"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a88a155473ce62e0ca564b9d27f4ed051">table_information</a></td></tr>
+<tr class="memdesc:a88a155473ce62e0ca564b9d27f4ed051"><td class="mdescLeft">&#160;</td><td class="mdescRight">Объект класса Inforamtion.  <br /></td></tr>
+<tr class="separator:a88a155473ce62e0ca564b9d27f4ed051"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4e322cb7ff1edf924f7adb3460a1e78" id="r_ae4e322cb7ff1edf924f7adb3460a1e78"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae4e322cb7ff1edf924f7adb3460a1e78">table_key_word</a></td></tr>
+<tr class="memdesc:ae4e322cb7ff1edf924f7adb3460a1e78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Объект класса KeyWord.  <br /></td></tr>
+<tr class="separator:ae4e322cb7ff1edf924f7adb3460a1e78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae41985c627a8165cce0370e0611c6bc4" id="r_ae41985c627a8165cce0370e0611c6bc4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae41985c627a8165cce0370e0611c6bc4">table_list_buttons</a></td></tr>
+<tr class="memdesc:ae41985c627a8165cce0370e0611c6bc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Объект класса ListButtons.  <br /></td></tr>
+<tr class="separator:ae41985c627a8165cce0370e0611c6bc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf8eab4ad369389bcfc7dd950015effc" id="r_adf8eab4ad369389bcfc7dd950015effc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adf8eab4ad369389bcfc7dd950015effc">table_list_information</a></td></tr>
+<tr class="memdesc:adf8eab4ad369389bcfc7dd950015effc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Объект класса ListInformation.  <br /></td></tr>
+<tr class="separator:adf8eab4ad369389bcfc7dd950015effc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3252da4044dea460b6655287138f954c" id="r_a3252da4044dea460b6655287138f954c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3252da4044dea460b6655287138f954c">table_list_key_words</a></td></tr>
+<tr class="memdesc:a3252da4044dea460b6655287138f954c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Объект класса ListKeyWords.  <br /></td></tr>
+<tr class="separator:a3252da4044dea460b6655287138f954c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a399b540311fd33362ceffc2cde64826b" id="r_a399b540311fd33362ceffc2cde64826b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a399b540311fd33362ceffc2cde64826b">table_list_user</a></td></tr>
+<tr class="memdesc:a399b540311fd33362ceffc2cde64826b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Объект класса ListUsers.  <br /></td></tr>
+<tr class="separator:a399b540311fd33362ceffc2cde64826b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1429906b0d919706c58e476495b64ba8" id="r_a1429906b0d919706c58e476495b64ba8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1429906b0d919706c58e476495b64ba8">table_list_void_menu</a></td></tr>
+<tr class="memdesc:a1429906b0d919706c58e476495b64ba8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Объект класса ListVoidMenu.  <br /></td></tr>
+<tr class="separator:a1429906b0d919706c58e476495b64ba8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa295a31b378a16cf6a574c91cb91bbee" id="r_aa295a31b378a16cf6a574c91cb91bbee"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa295a31b378a16cf6a574c91cb91bbee">table_menu</a></td></tr>
+<tr class="memdesc:aa295a31b378a16cf6a574c91cb91bbee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Объект класса Menu.  <br /></td></tr>
+<tr class="separator:aa295a31b378a16cf6a574c91cb91bbee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15edee922abdcb31ea6c142f1972d7b4" id="r_a15edee922abdcb31ea6c142f1972d7b4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a15edee922abdcb31ea6c142f1972d7b4">table_template</a></td></tr>
+<tr class="memdesc:a15edee922abdcb31ea6c142f1972d7b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Объект класса Template.  <br /></td></tr>
+<tr class="separator:a15edee922abdcb31ea6c142f1972d7b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9c420d00b8f89cc1c7f7a8660117a9f" id="r_ad9c420d00b8f89cc1c7f7a8660117a9f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad9c420d00b8f89cc1c7f7a8660117a9f">table_type_information</a></td></tr>
+<tr class="memdesc:ad9c420d00b8f89cc1c7f7a8660117a9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Объект класса TypeInformation.  <br /></td></tr>
+<tr class="separator:ad9c420d00b8f89cc1c7f7a8660117a9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76ec4e8d60966db0d0b3439bbf5cf29b" id="r_a76ec4e8d60966db0d0b3439bbf5cf29b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a76ec4e8d60966db0d0b3439bbf5cf29b">table_user</a></td></tr>
+<tr class="memdesc:a76ec4e8d60966db0d0b3439bbf5cf29b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Объект класса User.  <br /></td></tr>
+<tr class="separator:a76ec4e8d60966db0d0b3439bbf5cf29b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50b8924837581e579c3c6092a531f44f" id="r_a50b8924837581e579c3c6092a531f44f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a50b8924837581e579c3c6092a531f44f">table_type_menu</a></td></tr>
+<tr class="memdesc:a50b8924837581e579c3c6092a531f44f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Объект класса TypeMenu.  <br /></td></tr>
+<tr class="separator:a50b8924837581e579c3c6092a531f44f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a715dccc646429967c5601727e2463b46" id="r_a715dccc646429967c5601727e2463b46"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a715dccc646429967c5601727e2463b46">table_anecdote</a></td></tr>
+<tr class="memdesc:a715dccc646429967c5601727e2463b46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Объект класса Anecdote.  <br /></td></tr>
+<tr class="separator:a715dccc646429967c5601727e2463b46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Класс получения информации из базы данных. </p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
+<a id="aae60c5350685115a3deb657fd25d6081" name="aae60c5350685115a3deb657fd25d6081"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae60c5350685115a3deb657fd25d6081">&#9670;&#160;</a></span>__init__()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> None database.get_from_database.GetFromDataBase.__init__ </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">str</td>          <td class="paramname"><span class="paramname"><em>name_db</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   10</span>    <span class="keyword">def </span>__init__(self, name_db: str) -&gt; <span class="keywordtype">None</span>:</div>
+<div class="line"><span class="lineno">   11</span>        </div>
+<div class="line"><span class="lineno">   12</span>        self.state = <span class="keyword">False</span></div>
+<div class="line"><span class="lineno">   13</span>        </div>
+<div class="line"><span class="lineno">   14</span>        self.table_button = Button(name_db)</div>
+<div class="line"><span class="lineno">   15</span>        </div>
+<div class="line"><span class="lineno">   16</span>        self.table_category_user = CategoryUsers(name_db)</div>
+<div class="line"><span class="lineno">   17</span>        </div>
+<div class="line"><span class="lineno">   18</span>        self.table_information = Inforamtion(name_db)</div>
+<div class="line"><span class="lineno">   19</span>        </div>
+<div class="line"><span class="lineno">   20</span>        self.table_key_word = KeyWord(name_db)</div>
+<div class="line"><span class="lineno">   21</span>        </div>
+<div class="line"><span class="lineno">   22</span>        self.table_list_buttons = ListButtons(name_db)</div>
+<div class="line"><span class="lineno">   23</span>        </div>
+<div class="line"><span class="lineno">   24</span>        self.table_list_information = ListInformation(name_db)</div>
+<div class="line"><span class="lineno">   25</span>        </div>
+<div class="line"><span class="lineno">   26</span>        self.table_list_key_words = ListKeyWords(name_db)</div>
+<div class="line"><span class="lineno">   27</span>        </div>
+<div class="line"><span class="lineno">   28</span>        self.table_list_user = ListUsers(name_db)</div>
+<div class="line"><span class="lineno">   29</span>        </div>
+<div class="line"><span class="lineno">   30</span>        self.table_list_void_menu = ListVoidMenu(name_db)</div>
+<div class="line"><span class="lineno">   31</span>        </div>
+<div class="line"><span class="lineno">   32</span>        self.table_menu = Menu(name_db)</div>
+<div class="line"><span class="lineno">   33</span>        </div>
+<div class="line"><span class="lineno">   34</span>        self.table_template = Template(name_db)</div>
+<div class="line"><span class="lineno">   35</span>        </div>
+<div class="line"><span class="lineno">   36</span>        self.table_type_information = TypeInformation(name_db)</div>
+<div class="line"><span class="lineno">   37</span>        </div>
+<div class="line"><span class="lineno">   38</span>        self.table_user = User(name_db)</div>
+<div class="line"><span class="lineno">   39</span>        </div>
+<div class="line"><span class="lineno">   40</span>        self.table_type_menu = TypeMenu(name_db)</div>
+<div class="line"><span class="lineno">   41</span>        </div>
+<div class="line"><span class="lineno">   42</span>        self.table_anecdote = Anecdote(name_db)</div>
+<div class="line"><span class="lineno">   43</span> </div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="a78b729ab69a5a2775d1eab95bff828d8" name="a78b729ab69a5a2775d1eab95bff828d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78b729ab69a5a2775d1eab95bff828d8">&#9670;&#160;</a></span>get_function_anecdot()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> object database.get_from_database.GetFromDataBase.get_function_anecdot </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция возвращающая функцию получения анекдота по id анекдоту. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Текст анекдота. </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">  183</span>    <span class="keyword">def </span>get_function_anecdot(self) -&gt; object:</div>
+<div class="line"><span class="lineno">  184</span>        <span class="stringliteral">&quot;&quot;&quot;! Функция возвращающая функцию получения анекдота по id анекдоту.</span></div>
+<div class="line"><span class="lineno">  185</span><span class="stringliteral"></span> </div>
+<div class="line"><span class="lineno">  186</span><span class="stringliteral">        @return Текст анекдота.</span></div>
+<div class="line"><span class="lineno">  187</span><span class="stringliteral">        &quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno">  188</span>        <span class="keywordflow">return</span> self.table_anecdote.select_anecdote_on_id</div>
+<div class="line"><span class="lineno">  189</span>    </div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ae476aeccc5557b2de4d98682f9df8214" name="ae476aeccc5557b2de4d98682f9df8214"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae476aeccc5557b2de4d98682f9df8214">&#9670;&#160;</a></span>get_key_words()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> set database.get_from_database.GetFromDataBase.get_key_words </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">str</td>          <td class="paramname"><span class="paramname"><em>name_menu</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция получения ключевых слов для меню. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name_menu</td><td>- название меню.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Переменные:</p><ol type="1">
+<li>key_words - список ключевых слов для меню.</li>
+<li>set_key_words - множество ключевых слов для меню.</li>
+</ol>
+<dl class="section return"><dt>Возвращает</dt><dd>set_key_words - множество ключевых слов для меню. </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">  112</span>    <span class="keyword">def </span>get_key_words(self, name_menu: str) -&gt; set:</div>
+<div class="line"><span class="lineno">  113</span>        <span class="stringliteral">&quot;&quot;&quot;! Функция получения ключевых слов для меню.</span></div>
+<div class="line"><span class="lineno">  114</span><span class="stringliteral"></span> </div>
+<div class="line"><span class="lineno">  115</span><span class="stringliteral">        @param name_menu - название меню.</span></div>
+<div class="line"><span class="lineno">  116</span><span class="stringliteral"></span> </div>
+<div class="line"><span class="lineno">  117</span><span class="stringliteral">        Переменные:</span></div>
+<div class="line"><span class="lineno">  118</span><span class="stringliteral">            1. key_words - список ключевых слов для меню.</span></div>
+<div class="line"><span class="lineno">  119</span><span class="stringliteral">            2. set_key_words - множество ключевых слов для меню.</span></div>
+<div class="line"><span class="lineno">  120</span><span class="stringliteral"></span> </div>
+<div class="line"><span class="lineno">  121</span><span class="stringliteral">        @return set_key_words - множество ключевых слов для меню.</span></div>
+<div class="line"><span class="lineno">  122</span><span class="stringliteral">        &quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno">  123</span>        key_words = self.table_key_word.select_on_menu_name(name_menu) <span class="comment">#Select 2</span></div>
+<div class="line"><span class="lineno">  124</span>        set_key_words = set()</div>
+<div class="line"><span class="lineno">  125</span>        <span class="keywordflow">for</span> k <span class="keywordflow">in</span> key_words:</div>
+<div class="line"><span class="lineno">  126</span>            set_key_words.add(k) </div>
+<div class="line"><span class="lineno">  127</span>        <span class="keywordflow">return</span> set_key_words</div>
+<div class="line"><span class="lineno">  128</span> </div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="abf69e3bbfdbdc6d939ddf597b7c93fbd" name="abf69e3bbfdbdc6d939ddf597b7c93fbd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf69e3bbfdbdc6d939ddf597b7c93fbd">&#9670;&#160;</a></span>get_len_list_anecdotes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> int database.get_from_database.GetFromDataBase.get_len_list_anecdotes </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция получения количества анектодов в базе данных. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Количество анектодов в базе данных. </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">  190</span>    <span class="keyword">def </span>get_len_list_anecdotes(self) -&gt; int:</div>
+<div class="line"><span class="lineno">  191</span>        <span class="stringliteral">&quot;&quot;&quot;! Функция получения количества анектодов в базе данных.</span></div>
+<div class="line"><span class="lineno">  192</span><span class="stringliteral"></span> </div>
+<div class="line"><span class="lineno">  193</span><span class="stringliteral">        @return Количество анектодов в базе данных.</span></div>
+<div class="line"><span class="lineno">  194</span><span class="stringliteral">        &quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno">  195</span>        <span class="keywordflow">return</span> self.table_anecdote.get_last_row()</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="adca07c0fea035ac74e1ef505b79981ae" name="adca07c0fea035ac74e1ef505b79981ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adca07c0fea035ac74e1ef505b79981ae">&#9670;&#160;</a></span>get_list_keyboards_inline()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> list[str] database.get_from_database.GetFromDataBase.get_list_keyboards_inline </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">str</td>          <td class="paramname"><span class="paramname"><em>name_menu</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция получения списка линий кнопок для меню inline. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name_menu</td><td>- имя меню для которого происходит формирование кнопок.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Переменные:</p><ol type="1">
+<li>name_buttons - название кнопок.</li>
+<li>callback_buttons - список callback информации кнопок.</li>
+<li>counts_buttons - количество кнопок в ряду(логика построения кнопок).</li>
+<li>line_buttons - линия кнопок.</li>
+<li>list_line_buttons - список линий кнопок.</li>
+</ol>
+<p>Условия:</p>
+<ol type="1">
+<li>Если count == 1 и self.state == False, тогда:<ul>
+<li>В список line_buttons добавляется кнопка inline.</li>
+<li>В список list_line_buttons копируется список line_buttons.</li>
+<li>Список line_buttons очищается.</li>
+</ul>
+</li>
+<li>Если count == 2 и self.state == False, тогда:<ul>
+<li>В список line_buttons добавляется кнопка inline.</li>
+<li>self.state = True.</li>
+</ul>
+</li>
+<li>Если self.state == True, тогда:<ul>
+<li>В список line_buttons добавляется кнопка inline:</li>
+<li>В список list_line_buttons копируется список line_buttons.</li>
+<li>self.state = True.</li>
+<li>Список line_buttons очищается.</li>
+</ul>
+</li>
+</ol>
+<dl class="section return"><dt>Возвращает</dt><dd>list_line_buttons - возвращает список линий кнопок. </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">   64</span>    <span class="keyword">def </span>get_list_keyboards_inline(self, name_menu: str) -&gt; list[str]:</div>
+<div class="line"><span class="lineno">   65</span>        <span class="stringliteral">&quot;&quot;&quot;! Функция получения списка линий кнопок для меню inline.</span></div>
+<div class="line"><span class="lineno">   66</span><span class="stringliteral"></span> </div>
+<div class="line"><span class="lineno">   67</span><span class="stringliteral">        @param name_menu - имя меню для которого происходит формирование кнопок.</span></div>
+<div class="line"><span class="lineno">   68</span><span class="stringliteral"></span> </div>
+<div class="line"><span class="lineno">   69</span><span class="stringliteral">        Переменные:</span></div>
+<div class="line"><span class="lineno">   70</span><span class="stringliteral">            1. name_buttons - название кнопок.</span></div>
+<div class="line"><span class="lineno">   71</span><span class="stringliteral">            2. callback_buttons - список callback информации кнопок.</span></div>
+<div class="line"><span class="lineno">   72</span><span class="stringliteral">            3. counts_buttons - количество кнопок в ряду(логика построения кнопок).</span></div>
+<div class="line"><span class="lineno">   73</span><span class="stringliteral">            4. line_buttons - линия кнопок.</span></div>
+<div class="line"><span class="lineno">   74</span><span class="stringliteral">            5. list_line_buttons - список линий кнопок.</span></div>
+<div class="line"><span class="lineno">   75</span><span class="stringliteral">        </span></div>
+<div class="line"><span class="lineno">   76</span><span class="stringliteral">        Условия:</span></div>
+<div class="line"><span class="lineno">   77</span><span class="stringliteral"></span> </div>
+<div class="line"><span class="lineno">   78</span><span class="stringliteral">        1. Если count == 1 и self.state == False, тогда:</span></div>
+<div class="line"><span class="lineno">   79</span><span class="stringliteral">            - В список line_buttons добавляется кнопка inline.</span></div>
+<div class="line"><span class="lineno">   80</span><span class="stringliteral">            - В список list_line_buttons копируется список line_buttons.</span></div>
+<div class="line"><span class="lineno">   81</span><span class="stringliteral">            - Список line_buttons очищается.</span></div>
+<div class="line"><span class="lineno">   82</span><span class="stringliteral">        2. Если count == 2 и self.state == False, тогда:</span></div>
+<div class="line"><span class="lineno">   83</span><span class="stringliteral">            - В список line_buttons добавляется кнопка inline.</span></div>
+<div class="line"><span class="lineno">   84</span><span class="stringliteral">            - self.state = True.</span></div>
+<div class="line"><span class="lineno">   85</span><span class="stringliteral">        3. Если self.state == True, тогда:</span></div>
+<div class="line"><span class="lineno">   86</span><span class="stringliteral">            - В список line_buttons добавляется кнопка inline:</span></div>
+<div class="line"><span class="lineno">   87</span><span class="stringliteral">            - В список list_line_buttons копируется список line_buttons.</span></div>
+<div class="line"><span class="lineno">   88</span><span class="stringliteral">            - self.state = True.</span></div>
+<div class="line"><span class="lineno">   89</span><span class="stringliteral">            - Список line_buttons очищается.</span></div>
+<div class="line"><span class="lineno">   90</span><span class="stringliteral"></span> </div>
+<div class="line"><span class="lineno">   91</span><span class="stringliteral">        @return list_line_buttons - возвращает список линий кнопок.</span></div>
+<div class="line"><span class="lineno">   92</span><span class="stringliteral">        &quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno">   93</span>        name_buttons, callback_buttons, count_buttons = self.table_button.select_on_menu_name(name_menu)</div>
+<div class="line"><span class="lineno">   94</span>        line_buttons = []</div>
+<div class="line"><span class="lineno">   95</span>        list_line_buttons = []</div>
+<div class="line"><span class="lineno">   96</span>        <span class="keywordflow">for</span> count, name, callback <span class="keywordflow">in</span> zip(count_buttons, name_buttons, callback_buttons):</div>
+<div class="line"><span class="lineno">   97</span>            <span class="keywordflow">if</span> count == 1 <span class="keywordflow">and</span> self.state == <span class="keyword">False</span>:</div>
+<div class="line"><span class="lineno">   98</span>                line_buttons.append(InlineKeyboardButton(text = name, callback_data = callback))</div>
+<div class="line"><span class="lineno">   99</span>                list_line_buttons.append(line_buttons.copy())</div>
+<div class="line"><span class="lineno">  100</span>                line_buttons.clear()</div>
+<div class="line"><span class="lineno">  101</span>            <span class="keywordflow">elif</span> count == 2 <span class="keywordflow">and</span> self.state == <span class="keyword">False</span>:</div>
+<div class="line"><span class="lineno">  102</span>                line_buttons.append(InlineKeyboardButton(text = name, callback_data = callback))</div>
+<div class="line"><span class="lineno">  103</span>                self.state = <span class="keyword">True</span></div>
+<div class="line"><span class="lineno">  104</span>            <span class="keywordflow">elif</span> self.state:</div>
+<div class="line"><span class="lineno">  105</span>                line_buttons.append(InlineKeyboardButton(text = name, callback_data = callback))</div>
+<div class="line"><span class="lineno">  106</span>                list_line_buttons.append(line_buttons.copy())</div>
+<div class="line"><span class="lineno">  107</span>                self.state = <span class="keyword">False</span></div>
+<div class="line"><span class="lineno">  108</span>                line_buttons.clear()</div>
+<div class="line"><span class="lineno">  109</span>        self.state = <span class="keyword">False</span></div>
+<div class="line"><span class="lineno">  110</span>        <span class="keywordflow">return</span> list_line_buttons</div>
+<div class="line"><span class="lineno">  111</span>    </div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a0414f8e2d1218ec46c5b49fcf55bee47" name="a0414f8e2d1218ec46c5b49fcf55bee47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0414f8e2d1218ec46c5b49fcf55bee47">&#9670;&#160;</a></span>get_list_keyboards_reply()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> list[str] database.get_from_database.GetFromDataBase.get_list_keyboards_reply </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">list[list]</td>          <td class="paramname"><span class="paramname"><em>data_menu_reply</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция получения списка линий кнопок для меню reply. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data_meny_reply</td><td>- данные меню reply.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Переменные:</p><ol type="1">
+<li>list_line_buttons - список линий кнопок.</li>
+<li>line_buttons - линия кнопок.</li>
+<li>data[1] - название меню.</li>
+</ol>
+<dl class="section return"><dt>Возвращает</dt><dd>list_line_buttons - возвращает список линий кнопок. <br  />
+ </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">   44</span>    <span class="keyword">def </span>get_list_keyboards_reply(self, data_menu_reply: list[list]) -&gt; list[str]:</div>
+<div class="line"><span class="lineno">   45</span>        <span class="stringliteral">&quot;&quot;&quot;! Функция получения списка линий кнопок для меню reply.</span></div>
+<div class="line"><span class="lineno">   46</span><span class="stringliteral"></span> </div>
+<div class="line"><span class="lineno">   47</span><span class="stringliteral">        @param data_meny_reply - данные меню reply.</span></div>
+<div class="line"><span class="lineno">   48</span><span class="stringliteral"></span> </div>
+<div class="line"><span class="lineno">   49</span><span class="stringliteral">        Переменные:</span></div>
+<div class="line"><span class="lineno">   50</span><span class="stringliteral">            1. list_line_buttons - список линий кнопок.</span></div>
+<div class="line"><span class="lineno">   51</span><span class="stringliteral">            2. line_buttons - линия кнопок.</span></div>
+<div class="line"><span class="lineno">   52</span><span class="stringliteral">            3. data[1] - название меню.</span></div>
+<div class="line"><span class="lineno">   53</span><span class="stringliteral">        </span></div>
+<div class="line"><span class="lineno">   54</span><span class="stringliteral">        @return list_line_buttons - возвращает список линий кнопок.    </span></div>
+<div class="line"><span class="lineno">   55</span><span class="stringliteral">        &quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno">   56</span>        list_line_buttons = []</div>
+<div class="line"><span class="lineno">   57</span>        line_buttons = []</div>
+<div class="line"><span class="lineno">   58</span>        <span class="keywordflow">for</span> data <span class="keywordflow">in</span> data_menu_reply:</div>
+<div class="line"><span class="lineno">   59</span>            line_buttons.append(KeyboardButton(text = data[1]))</div>
+<div class="line"><span class="lineno">   60</span>            list_line_buttons.append(line_buttons.copy())</div>
+<div class="line"><span class="lineno">   61</span>            line_buttons.clear()</div>
+<div class="line"><span class="lineno">   62</span>        <span class="keywordflow">return</span> list_line_buttons</div>
+<div class="line"><span class="lineno">   63</span>    </div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a5dc0f5d50bfd27f38067bd69bb5b08a9" name="a5dc0f5d50bfd27f38067bd69bb5b08a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5dc0f5d50bfd27f38067bd69bb5b08a9">&#9670;&#160;</a></span>get_list_path_images()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> list[str] database.get_from_database.GetFromDataBase.get_list_path_images </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">str</td>          <td class="paramname"><span class="paramname"><em>name_menu</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция получения списка путей к изображениям для меню. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name_menu</td><td>- название меню.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Список путей к изображениям для меню. </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">  129</span>    <span class="keyword">def </span>get_list_path_images(self, name_menu: str) -&gt; list[str]:</div>
+<div class="line"><span class="lineno">  130</span>        <span class="stringliteral">&quot;&quot;&quot;! Функция получения списка путей к изображениям для меню.</span></div>
+<div class="line"><span class="lineno">  131</span><span class="stringliteral"></span> </div>
+<div class="line"><span class="lineno">  132</span><span class="stringliteral">        @param name_menu - название меню.</span></div>
+<div class="line"><span class="lineno">  133</span><span class="stringliteral"></span> </div>
+<div class="line"><span class="lineno">  134</span><span class="stringliteral">        @return Список путей к изображениям для меню.</span></div>
+<div class="line"><span class="lineno">  135</span><span class="stringliteral">        &quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno">  136</span>        <span class="keywordflow">return</span> self.table_information.select_on_menu_name_image(name_menu = name_menu, mod_all = <span class="keyword">True</span>)</div>
+<div class="line"><span class="lineno">  137</span> </div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ae70eecf2a585d26a689ce9cdf375634e" name="ae70eecf2a585d26a689ce9cdf375634e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae70eecf2a585d26a689ce9cdf375634e">&#9670;&#160;</a></span>get_list_text()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> list[str] database.get_from_database.GetFromDataBase.get_list_text </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">str</td>          <td class="paramname"><span class="paramname"><em>name_menu</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция получения списка теста для меню. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name_menu</td><td>- название меню.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Список текста для меню. </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">  138</span>    <span class="keyword">def </span>get_list_text(self, name_menu: str) -&gt; list[str]:</div>
+<div class="line"><span class="lineno">  139</span>        <span class="stringliteral">&quot;&quot;&quot;! Функция получения списка теста для меню.</span></div>
+<div class="line"><span class="lineno">  140</span><span class="stringliteral">        </span></div>
+<div class="line"><span class="lineno">  141</span><span class="stringliteral">        @param name_menu - название меню.</span></div>
+<div class="line"><span class="lineno">  142</span><span class="stringliteral"></span> </div>
+<div class="line"><span class="lineno">  143</span><span class="stringliteral">        @return Список текста для меню.</span></div>
+<div class="line"><span class="lineno">  144</span><span class="stringliteral">        &quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno">  145</span>        <span class="keywordflow">return</span> self.table_information.select_on_menu_name_text(name_menu = name_menu, mod_all = <span class="keyword">True</span>)</div>
+<div class="line"><span class="lineno">  146</span> </div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aee66a05c1d644768729c2cf050a1eecb" name="aee66a05c1d644768729c2cf050a1eecb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee66a05c1d644768729c2cf050a1eecb">&#9670;&#160;</a></span>get_path_file()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> str database.get_from_database.GetFromDataBase.get_path_file </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">str</td>          <td class="paramname"><span class="paramname"><em>name_menu</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция получения пути к файлу для меню. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name_menu</td><td>- название меню.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Путь к файлу для меню. </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">  156</span>    <span class="keyword">def </span>get_path_file(self, name_menu: str) -&gt; str:</div>
+<div class="line"><span class="lineno">  157</span>        <span class="stringliteral">&quot;&quot;&quot;! Функция получения пути к файлу для меню.</span></div>
+<div class="line"><span class="lineno">  158</span><span class="stringliteral">        </span></div>
+<div class="line"><span class="lineno">  159</span><span class="stringliteral">        @param name_menu - название меню.</span></div>
+<div class="line"><span class="lineno">  160</span><span class="stringliteral"></span> </div>
+<div class="line"><span class="lineno">  161</span><span class="stringliteral">        @return Путь к файлу для меню.</span></div>
+<div class="line"><span class="lineno">  162</span><span class="stringliteral">        &quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno">  163</span>        <span class="keywordflow">return</span> self.table_information.select_on_menu_name_file(name_menu = name_menu)</div>
+<div class="line"><span class="lineno">  164</span> </div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a348ff384c582cfadfc088f22d85c96e1" name="a348ff384c582cfadfc088f22d85c96e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a348ff384c582cfadfc088f22d85c96e1">&#9670;&#160;</a></span>get_path_image()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> str database.get_from_database.GetFromDataBase.get_path_image </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">str</td>          <td class="paramname"><span class="paramname"><em>name_menu</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция получения пути к изображению для меню. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name_menu</td><td>- название меню.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Путь к изображению для меню. </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">  165</span>    <span class="keyword">def </span>get_path_image(self, name_menu: str) -&gt; str:</div>
+<div class="line"><span class="lineno">  166</span>        <span class="stringliteral">&quot;&quot;&quot;! Функция получения пути к изображению для меню.</span></div>
+<div class="line"><span class="lineno">  167</span><span class="stringliteral">        </span></div>
+<div class="line"><span class="lineno">  168</span><span class="stringliteral">        @param name_menu - название меню.</span></div>
+<div class="line"><span class="lineno">  169</span><span class="stringliteral"></span> </div>
+<div class="line"><span class="lineno">  170</span><span class="stringliteral">        @return Путь к изображению для меню.</span></div>
+<div class="line"><span class="lineno">  171</span><span class="stringliteral">        &quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno">  172</span>        <span class="keywordflow">return</span> self.table_information.select_on_menu_name_image(name_menu = name_menu)</div>
+<div class="line"><span class="lineno">  173</span> </div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a97332c730cc4417f9ab9356efd18e806" name="a97332c730cc4417f9ab9356efd18e806"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97332c730cc4417f9ab9356efd18e806">&#9670;&#160;</a></span>get_text()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> str database.get_from_database.GetFromDataBase.get_text </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">str</td>          <td class="paramname"><span class="paramname"><em>name_menu</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция получения теста для меню. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name_menu</td><td>- название меню.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Текст для меню. </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">  147</span>    <span class="keyword">def </span>get_text(self, name_menu: str) -&gt; str:</div>
+<div class="line"><span class="lineno">  148</span>        <span class="stringliteral">&quot;&quot;&quot;! Функция получения теста для меню.</span></div>
+<div class="line"><span class="lineno">  149</span><span class="stringliteral">        </span></div>
+<div class="line"><span class="lineno">  150</span><span class="stringliteral">        @param name_menu - название меню.</span></div>
+<div class="line"><span class="lineno">  151</span><span class="stringliteral"></span> </div>
+<div class="line"><span class="lineno">  152</span><span class="stringliteral">        @return Текст для меню.</span></div>
+<div class="line"><span class="lineno">  153</span><span class="stringliteral">        &quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno">  154</span>        <span class="keywordflow">return</span> self.table_information.select_on_menu_name_text(name_menu = name_menu)</div>
+<div class="line"><span class="lineno">  155</span> </div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ab22763fb62e2b3775dcaad75c0ddb090" name="ab22763fb62e2b3775dcaad75c0ddb090"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab22763fb62e2b3775dcaad75c0ddb090">&#9670;&#160;</a></span>get_users()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> dict database.get_from_database.GetFromDataBase.get_users </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция получения словаря пользователей. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name_menu</td><td>- название меню.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Словарь пользователей. </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">  174</span>    <span class="keyword">def </span>get_users(self) -&gt; dict:</div>
+<div class="line"><span class="lineno">  175</span>        <span class="stringliteral">&quot;&quot;&quot;! Функция получения словаря пользователей.</span></div>
+<div class="line"><span class="lineno">  176</span><span class="stringliteral">        </span></div>
+<div class="line"><span class="lineno">  177</span><span class="stringliteral">        @param name_menu - название меню.</span></div>
+<div class="line"><span class="lineno">  178</span><span class="stringliteral"></span> </div>
+<div class="line"><span class="lineno">  179</span><span class="stringliteral">        @return Словарь пользователей.</span></div>
+<div class="line"><span class="lineno">  180</span><span class="stringliteral">        &quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno">  181</span>        <span class="keywordflow">return</span> self.table_user.select_on_parser()</div>
+<div class="line"><span class="lineno">  182</span> </div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Данные класса</h2>
+<a id="a765ebca82f5576d65ea9307d897c7dd2" name="a765ebca82f5576d65ea9307d897c7dd2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a765ebca82f5576d65ea9307d897c7dd2">&#9670;&#160;</a></span>state</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">database.get_from_database.GetFromDataBase.state</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Флаг для формирования списка кнопок </p>
+
+</div>
+</div>
+<a id="a715dccc646429967c5601727e2463b46" name="a715dccc646429967c5601727e2463b46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a715dccc646429967c5601727e2463b46">&#9670;&#160;</a></span>table_anecdote</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">database.get_from_database.GetFromDataBase.table_anecdote</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Объект класса Anecdote. </p>
+
+</div>
+</div>
+<a id="adb3ffc8e1f015a0a4668b1013df49a42" name="adb3ffc8e1f015a0a4668b1013df49a42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb3ffc8e1f015a0a4668b1013df49a42">&#9670;&#160;</a></span>table_button</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">database.get_from_database.GetFromDataBase.table_button</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Объект класса Button. </p>
+
+</div>
+</div>
+<a id="a6df7c7282b80e02846fd03f17af522d6" name="a6df7c7282b80e02846fd03f17af522d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6df7c7282b80e02846fd03f17af522d6">&#9670;&#160;</a></span>table_category_user</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">database.get_from_database.GetFromDataBase.table_category_user</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Объект класса CategoryUsers. </p>
+
+</div>
+</div>
+<a id="a88a155473ce62e0ca564b9d27f4ed051" name="a88a155473ce62e0ca564b9d27f4ed051"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88a155473ce62e0ca564b9d27f4ed051">&#9670;&#160;</a></span>table_information</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">database.get_from_database.GetFromDataBase.table_information</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Объект класса Inforamtion. </p>
+
+</div>
+</div>
+<a id="ae4e322cb7ff1edf924f7adb3460a1e78" name="ae4e322cb7ff1edf924f7adb3460a1e78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4e322cb7ff1edf924f7adb3460a1e78">&#9670;&#160;</a></span>table_key_word</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">database.get_from_database.GetFromDataBase.table_key_word</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Объект класса KeyWord. </p>
+
+</div>
+</div>
+<a id="ae41985c627a8165cce0370e0611c6bc4" name="ae41985c627a8165cce0370e0611c6bc4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae41985c627a8165cce0370e0611c6bc4">&#9670;&#160;</a></span>table_list_buttons</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">database.get_from_database.GetFromDataBase.table_list_buttons</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Объект класса ListButtons. </p>
+
+</div>
+</div>
+<a id="adf8eab4ad369389bcfc7dd950015effc" name="adf8eab4ad369389bcfc7dd950015effc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf8eab4ad369389bcfc7dd950015effc">&#9670;&#160;</a></span>table_list_information</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">database.get_from_database.GetFromDataBase.table_list_information</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Объект класса ListInformation. </p>
+
+</div>
+</div>
+<a id="a3252da4044dea460b6655287138f954c" name="a3252da4044dea460b6655287138f954c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3252da4044dea460b6655287138f954c">&#9670;&#160;</a></span>table_list_key_words</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">database.get_from_database.GetFromDataBase.table_list_key_words</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Объект класса ListKeyWords. </p>
+
+</div>
+</div>
+<a id="a399b540311fd33362ceffc2cde64826b" name="a399b540311fd33362ceffc2cde64826b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a399b540311fd33362ceffc2cde64826b">&#9670;&#160;</a></span>table_list_user</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">database.get_from_database.GetFromDataBase.table_list_user</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Объект класса ListUsers. </p>
+
+</div>
+</div>
+<a id="a1429906b0d919706c58e476495b64ba8" name="a1429906b0d919706c58e476495b64ba8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1429906b0d919706c58e476495b64ba8">&#9670;&#160;</a></span>table_list_void_menu</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">database.get_from_database.GetFromDataBase.table_list_void_menu</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Объект класса ListVoidMenu. </p>
+
+</div>
+</div>
+<a id="aa295a31b378a16cf6a574c91cb91bbee" name="aa295a31b378a16cf6a574c91cb91bbee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa295a31b378a16cf6a574c91cb91bbee">&#9670;&#160;</a></span>table_menu</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">database.get_from_database.GetFromDataBase.table_menu</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Объект класса Menu. </p>
+
+</div>
+</div>
+<a id="a15edee922abdcb31ea6c142f1972d7b4" name="a15edee922abdcb31ea6c142f1972d7b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15edee922abdcb31ea6c142f1972d7b4">&#9670;&#160;</a></span>table_template</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">database.get_from_database.GetFromDataBase.table_template</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Объект класса Template. </p>
+
+</div>
+</div>
+<a id="ad9c420d00b8f89cc1c7f7a8660117a9f" name="ad9c420d00b8f89cc1c7f7a8660117a9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9c420d00b8f89cc1c7f7a8660117a9f">&#9670;&#160;</a></span>table_type_information</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">database.get_from_database.GetFromDataBase.table_type_information</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Объект класса TypeInformation. </p>
+
+</div>
+</div>
+<a id="a50b8924837581e579c3c6092a531f44f" name="a50b8924837581e579c3c6092a531f44f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50b8924837581e579c3c6092a531f44f">&#9670;&#160;</a></span>table_type_menu</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">database.get_from_database.GetFromDataBase.table_type_menu</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Объект класса TypeMenu. </p>
+
+</div>
+</div>
+<a id="a76ec4e8d60966db0d0b3439bbf5cf29b" name="a76ec4e8d60966db0d0b3439bbf5cf29b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76ec4e8d60966db0d0b3439bbf5cf29b">&#9670;&#160;</a></span>table_user</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">database.get_from_database.GetFromDataBase.table_user</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Объект класса User. </p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li><a class="el" href="">get_from_database.py</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

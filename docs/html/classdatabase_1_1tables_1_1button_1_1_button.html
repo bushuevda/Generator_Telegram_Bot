@@ -1,0 +1,464 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Генераторт телеграм бота: Класс database.tables.button.Button</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Генераторт телеграм бота<span id="projectnumber">&#160;1.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacedatabase.html">database</a></li><li class="navelem"><a class="el" href="namespacedatabase_1_1tables.html">tables</a></li><li class="navelem"><a class="el" href="namespacedatabase_1_1tables_1_1button.html">button</a></li><li class="navelem"><a class="el" href="classdatabase_1_1tables_1_1button_1_1_button.html">Button</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pub-attribs">Открытые атрибуты</a> &#124;
+<a href="classdatabase_1_1tables_1_1button_1_1_button-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle"><div class="title">Класс database.tables.button.Button</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Класс-таблица Button.  
+ <a href="#details">Подробнее...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a8e082f241957b7267e4a0565fdc8ef77" id="r_a8e082f241957b7267e4a0565fdc8ef77"><td class="memItemLeft" align="right" valign="top">None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8e082f241957b7267e4a0565fdc8ef77">__init__</a> (self, str name_db)</td></tr>
+<tr class="separator:a8e082f241957b7267e4a0565fdc8ef77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6003354f01311d2e46533fb406f2b9ac" id="r_a6003354f01311d2e46533fb406f2b9ac"><td class="memItemLeft" align="right" valign="top">list[str]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6003354f01311d2e46533fb406f2b9ac">select_on_menu_name</a> (self, str menu_name)</td></tr>
+<tr class="memdesc:a6003354f01311d2e46533fb406f2b9ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция выборки кнопок по названию меню.  <br /></td></tr>
+<tr class="separator:a6003354f01311d2e46533fb406f2b9ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3f14876ea9b6ac4df1380aee45258fe" id="r_ac3f14876ea9b6ac4df1380aee45258fe"><td class="memItemLeft" align="right" valign="top">list[str]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac3f14876ea9b6ac4df1380aee45258fe">select_on_callback_data</a> (self, str cb_data)</td></tr>
+<tr class="memdesc:ac3f14876ea9b6ac4df1380aee45258fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция выборки информации о кнопке по callback.  <br /></td></tr>
+<tr class="separator:ac3f14876ea9b6ac4df1380aee45258fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c07301bc9518091ee7d7ddeef88173b" id="r_a6c07301bc9518091ee7d7ddeef88173b"><td class="memItemLeft" align="right" valign="top">Union[list[str], list[str], list[str]]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6c07301bc9518091ee7d7ddeef88173b">parser_in_union</a> (self, list[list[str]] all_results)</td></tr>
+<tr class="memdesc:a6c07301bc9518091ee7d7ddeef88173b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция объдинения списков информации о кнопках для .  <br /></td></tr>
+<tr class="separator:a6c07301bc9518091ee7d7ddeef88173b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classdatabase_1_1tables_1_1table_1_1_table"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classdatabase_1_1tables_1_1table_1_1_table')"><img src="closed.png" alt="-"/>&#160;Открытые члены унаследованные от <a class="el" href="classdatabase_1_1tables_1_1table_1_1_table.html">database.tables.table.Table</a></td></tr>
+<tr class="memitem:a7d8f1c3f854ff431ebb34f1857090334 inherit pub_methods_classdatabase_1_1tables_1_1table_1_1_table" id="r_a7d8f1c3f854ff431ebb34f1857090334"><td class="memItemLeft" align="right" valign="top">None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdatabase_1_1tables_1_1table_1_1_table.html#a7d8f1c3f854ff431ebb34f1857090334">connect_db</a> (self)</td></tr>
+<tr class="memdesc:a7d8f1c3f854ff431ebb34f1857090334 inherit pub_methods_classdatabase_1_1tables_1_1table_1_1_table"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция соединения с базой данных.  <br /></td></tr>
+<tr class="separator:a7d8f1c3f854ff431ebb34f1857090334 inherit pub_methods_classdatabase_1_1tables_1_1table_1_1_table"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0dcdf9282510c7f03cafa12d5b1484e inherit pub_methods_classdatabase_1_1tables_1_1table_1_1_table" id="r_ad0dcdf9282510c7f03cafa12d5b1484e"><td class="memItemLeft" align="right" valign="top">None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdatabase_1_1tables_1_1table_1_1_table.html#ad0dcdf9282510c7f03cafa12d5b1484e">close_connect_db</a> (self)</td></tr>
+<tr class="memdesc:ad0dcdf9282510c7f03cafa12d5b1484e inherit pub_methods_classdatabase_1_1tables_1_1table_1_1_table"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция закрытия соединения с базой данных.  <br /></td></tr>
+<tr class="separator:ad0dcdf9282510c7f03cafa12d5b1484e inherit pub_methods_classdatabase_1_1tables_1_1table_1_1_table"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57d3bf3f15891adbec1eae64c8ea618d inherit pub_methods_classdatabase_1_1tables_1_1table_1_1_table" id="r_a57d3bf3f15891adbec1eae64c8ea618d"><td class="memItemLeft" align="right" valign="top">list&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdatabase_1_1tables_1_1table_1_1_table.html#a57d3bf3f15891adbec1eae64c8ea618d">select_all</a> (self)</td></tr>
+<tr class="memdesc:a57d3bf3f15891adbec1eae64c8ea618d inherit pub_methods_classdatabase_1_1tables_1_1table_1_1_table"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция выборки всех записей таблицы.  <br /></td></tr>
+<tr class="separator:a57d3bf3f15891adbec1eae64c8ea618d inherit pub_methods_classdatabase_1_1tables_1_1table_1_1_table"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a0b80d04dd83f72ef12d357435f4e4e inherit pub_methods_classdatabase_1_1tables_1_1table_1_1_table" id="r_a6a0b80d04dd83f72ef12d357435f4e4e"><td class="memItemLeft" align="right" valign="top">None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdatabase_1_1tables_1_1table_1_1_table.html#a6a0b80d04dd83f72ef12d357435f4e4e">insert</a> (self, *args)</td></tr>
+<tr class="memdesc:a6a0b80d04dd83f72ef12d357435f4e4e inherit pub_methods_classdatabase_1_1tables_1_1table_1_1_table"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция добавления информации в таблицу.  <br /></td></tr>
+<tr class="separator:a6a0b80d04dd83f72ef12d357435f4e4e inherit pub_methods_classdatabase_1_1tables_1_1table_1_1_table"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c95c32b012e14655b9c8980137c806a inherit pub_methods_classdatabase_1_1tables_1_1table_1_1_table" id="r_a5c95c32b012e14655b9c8980137c806a"><td class="memItemLeft" align="right" valign="top">None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdatabase_1_1tables_1_1table_1_1_table.html#a5c95c32b012e14655b9c8980137c806a">insert_data</a> (self)</td></tr>
+<tr class="memdesc:a5c95c32b012e14655b9c8980137c806a inherit pub_methods_classdatabase_1_1tables_1_1table_1_1_table"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция добавления данных в таблицу.  <br /></td></tr>
+<tr class="separator:a5c95c32b012e14655b9c8980137c806a inherit pub_methods_classdatabase_1_1tables_1_1table_1_1_table"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4447459ce8baf9d4f346fd7256f40d8 inherit pub_methods_classdatabase_1_1tables_1_1table_1_1_table" id="r_aa4447459ce8baf9d4f346fd7256f40d8"><td class="memItemLeft" align="right" valign="top">None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdatabase_1_1tables_1_1table_1_1_table.html#aa4447459ce8baf9d4f346fd7256f40d8">update</a> (self, str query)</td></tr>
+<tr class="memdesc:aa4447459ce8baf9d4f346fd7256f40d8 inherit pub_methods_classdatabase_1_1tables_1_1table_1_1_table"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция изменения информации в таблице.  <br /></td></tr>
+<tr class="separator:aa4447459ce8baf9d4f346fd7256f40d8 inherit pub_methods_classdatabase_1_1tables_1_1table_1_1_table"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a089b86e4ef15b0cc0b78a8dd8231e182 inherit pub_methods_classdatabase_1_1tables_1_1table_1_1_table" id="r_a089b86e4ef15b0cc0b78a8dd8231e182"><td class="memItemLeft" align="right" valign="top">None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdatabase_1_1tables_1_1table_1_1_table.html#a089b86e4ef15b0cc0b78a8dd8231e182">create</a> (self)</td></tr>
+<tr class="memdesc:a089b86e4ef15b0cc0b78a8dd8231e182 inherit pub_methods_classdatabase_1_1tables_1_1table_1_1_table"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция создания таблицы.  <br /></td></tr>
+<tr class="separator:a089b86e4ef15b0cc0b78a8dd8231e182 inherit pub_methods_classdatabase_1_1tables_1_1table_1_1_table"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c7f4be1b9d89a9bbede55abe5363751 inherit pub_methods_classdatabase_1_1tables_1_1table_1_1_table" id="r_a4c7f4be1b9d89a9bbede55abe5363751"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdatabase_1_1tables_1_1table_1_1_table.html#a4c7f4be1b9d89a9bbede55abe5363751">get_last_row</a> (self)</td></tr>
+<tr class="memdesc:a4c7f4be1b9d89a9bbede55abe5363751 inherit pub_methods_classdatabase_1_1tables_1_1table_1_1_table"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция выборки последней записи из таблицы.  <br /></td></tr>
+<tr class="separator:a4c7f4be1b9d89a9bbede55abe5363751 inherit pub_methods_classdatabase_1_1tables_1_1table_1_1_table"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Открытые атрибуты</h2></td></tr>
+<tr class="memitem:a2566234dc5b5fe2b5fa3006602741770" id="r_a2566234dc5b5fe2b5fa3006602741770"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2566234dc5b5fe2b5fa3006602741770">create_query</a></td></tr>
+<tr class="memdesc:a2566234dc5b5fe2b5fa3006602741770"><td class="mdescLeft">&#160;</td><td class="mdescRight">Запрос создания таблицы.  <br /></td></tr>
+<tr class="separator:a2566234dc5b5fe2b5fa3006602741770"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebbdb8d7fc2ccce75179987eafc532d4" id="r_aebbdb8d7fc2ccce75179987eafc532d4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aebbdb8d7fc2ccce75179987eafc532d4">data_to_db</a></td></tr>
+<tr class="memdesc:aebbdb8d7fc2ccce75179987eafc532d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Данные для добавления в таблицу.  <br /></td></tr>
+<tr class="separator:aebbdb8d7fc2ccce75179987eafc532d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac20753f8616b15c739b5c01647c6ed96" id="r_ac20753f8616b15c739b5c01647c6ed96"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac20753f8616b15c739b5c01647c6ed96">query_insert</a></td></tr>
+<tr class="memdesc:ac20753f8616b15c739b5c01647c6ed96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Запрос добавления в таблицу.  <br /></td></tr>
+<tr class="separator:ac20753f8616b15c739b5c01647c6ed96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a985ce3118b8408b375c295711c21e05d" id="r_a985ce3118b8408b375c295711c21e05d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a985ce3118b8408b375c295711c21e05d">query_on_menu_name</a></td></tr>
+<tr class="memdesc:a985ce3118b8408b375c295711c21e05d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Запрос выборки кнопок по названию меню.  <br /></td></tr>
+<tr class="separator:a985ce3118b8408b375c295711c21e05d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a679eedd5ae82bbc5d756df31d75c24bb" id="r_a679eedd5ae82bbc5d756df31d75c24bb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a679eedd5ae82bbc5d756df31d75c24bb">query_on_callback_data</a></td></tr>
+<tr class="memdesc:a679eedd5ae82bbc5d756df31d75c24bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Запрос выборки кнопок для меню по callback_data.  <br /></td></tr>
+<tr class="separator:a679eedd5ae82bbc5d756df31d75c24bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4832100223fd4fddf3c7698c7e55306c" id="r_a4832100223fd4fddf3c7698c7e55306c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4832100223fd4fddf3c7698c7e55306c">query_select_all</a></td></tr>
+<tr class="memdesc:a4832100223fd4fddf3c7698c7e55306c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Запрос выборки всех записей таблицы.  <br /></td></tr>
+<tr class="separator:a4832100223fd4fddf3c7698c7e55306c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_classdatabase_1_1tables_1_1table_1_1_table"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_attribs_classdatabase_1_1tables_1_1table_1_1_table')"><img src="closed.png" alt="-"/>&#160;Открытые атрибуты унаследованные от <a class="el" href="classdatabase_1_1tables_1_1table_1_1_table.html">database.tables.table.Table</a></td></tr>
+<tr class="memitem:ab3a7bbff99374ef0d833958b5c6c21ef inherit pub_attribs_classdatabase_1_1tables_1_1table_1_1_table" id="r_ab3a7bbff99374ef0d833958b5c6c21ef"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdatabase_1_1tables_1_1table_1_1_table.html#ab3a7bbff99374ef0d833958b5c6c21ef">query_select_all</a></td></tr>
+<tr class="memdesc:ab3a7bbff99374ef0d833958b5c6c21ef inherit pub_attribs_classdatabase_1_1tables_1_1table_1_1_table"><td class="mdescLeft">&#160;</td><td class="mdescRight">Запрос выборки всех записей таблицы.  <br /></td></tr>
+<tr class="separator:ab3a7bbff99374ef0d833958b5c6c21ef inherit pub_attribs_classdatabase_1_1tables_1_1table_1_1_table"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadda5e773c64e9ff165e14a71383b41d inherit pub_attribs_classdatabase_1_1tables_1_1table_1_1_table" id="r_aadda5e773c64e9ff165e14a71383b41d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdatabase_1_1tables_1_1table_1_1_table.html#aadda5e773c64e9ff165e14a71383b41d">sqlite_connection</a></td></tr>
+<tr class="separator:aadda5e773c64e9ff165e14a71383b41d inherit pub_attribs_classdatabase_1_1tables_1_1table_1_1_table"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa28331013d17ee4097668a4f818dd72f inherit pub_attribs_classdatabase_1_1tables_1_1table_1_1_table" id="r_aa28331013d17ee4097668a4f818dd72f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdatabase_1_1tables_1_1table_1_1_table.html#aa28331013d17ee4097668a4f818dd72f">cursor</a></td></tr>
+<tr class="separator:aa28331013d17ee4097668a4f818dd72f inherit pub_attribs_classdatabase_1_1tables_1_1table_1_1_table"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26e450ea99f70eba3c6c90c0811324bc inherit pub_attribs_classdatabase_1_1tables_1_1table_1_1_table" id="r_a26e450ea99f70eba3c6c90c0811324bc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdatabase_1_1tables_1_1table_1_1_table.html#a26e450ea99f70eba3c6c90c0811324bc">query_insert</a></td></tr>
+<tr class="separator:a26e450ea99f70eba3c6c90c0811324bc inherit pub_attribs_classdatabase_1_1tables_1_1table_1_1_table"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83dda0a03491ccde924c7f7b0f83a914 inherit pub_attribs_classdatabase_1_1tables_1_1table_1_1_table" id="r_a83dda0a03491ccde924c7f7b0f83a914"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdatabase_1_1tables_1_1table_1_1_table.html#a83dda0a03491ccde924c7f7b0f83a914">create_query</a></td></tr>
+<tr class="separator:a83dda0a03491ccde924c7f7b0f83a914 inherit pub_attribs_classdatabase_1_1tables_1_1table_1_1_table"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27be1a2ecca35990b03d6e345edd58aa inherit pub_attribs_classdatabase_1_1tables_1_1table_1_1_table" id="r_a27be1a2ecca35990b03d6e345edd58aa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdatabase_1_1tables_1_1table_1_1_table.html#a27be1a2ecca35990b03d6e345edd58aa">query_last_row</a></td></tr>
+<tr class="separator:a27be1a2ecca35990b03d6e345edd58aa inherit pub_attribs_classdatabase_1_1tables_1_1table_1_1_table"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Класс-таблица Button. </p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
+<a id="a8e082f241957b7267e4a0565fdc8ef77" name="a8e082f241957b7267e4a0565fdc8ef77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e082f241957b7267e4a0565fdc8ef77">&#9670;&#160;</a></span>__init__()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> None database.tables.button.Button.__init__ </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">str</td>          <td class="paramname"><span class="paramname"><em>name_db</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Переопределяет метод предка <a class="el" href="classdatabase_1_1tables_1_1table_1_1_table.html#acfda96c089e8e9293ef6fa0a91206ad2">database.tables.table.Table</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   13</span>    <span class="keyword">def </span>__init__(self,name_db: str) -&gt; <span class="keywordtype">None</span>:</div>
+<div class="line"><span class="lineno">   14</span>        super().__init__(name_db = name_db)</div>
+<div class="line"><span class="lineno">   15</span>        </div>
+<div class="line"><span class="lineno">   16</span>        self.create_query = query_create</div>
+<div class="line"><span class="lineno">   17</span>        </div>
+<div class="line"><span class="lineno">   18</span>        self.data_to_db = data</div>
+<div class="line"><span class="lineno">   19</span>        </div>
+<div class="line"><span class="lineno">   20</span>        self.query_insert = query_insert</div>
+<div class="line"><span class="lineno">   21</span>        </div>
+<div class="line"><span class="lineno">   22</span>        self.query_on_menu_name = query_on_menu_name</div>
+<div class="line"><span class="lineno">   23</span>        </div>
+<div class="line"><span class="lineno">   24</span>        self.query_on_callback_data = query_on_callback_data</div>
+<div class="line"><span class="lineno">   25</span>        </div>
+<div class="line"><span class="lineno">   26</span>        self.query_select_all = query_select_all</div>
+<div class="line"><span class="lineno">   27</span>        </div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="a6c07301bc9518091ee7d7ddeef88173b" name="a6c07301bc9518091ee7d7ddeef88173b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c07301bc9518091ee7d7ddeef88173b">&#9670;&#160;</a></span>parser_in_union()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> Union [list[str], list[str], list[str]] database.tables.button.Button.parser_in_union </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">list[list[str]]</td>          <td class="paramname"><span class="paramname"><em>all_results</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция объдинения списков информации о кнопках для . </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">all_results</td><td>- записи выборки из базы данных.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Переменные:</p><ol type="1">
+<li>counts_buttons - количество кнопок в ряду.</li>
+<li>name_button - названия кнопок.</li>
+<li>callback_buttons - callback кнопок.</li>
+</ol>
+<dl class="section return"><dt>Возвращает</dt><dd>Объединенные списки информации о кнопках. </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">   60</span>    <span class="keyword">def </span>parser_in_union(self, all_results: list[list[str]]) -&gt; Union [list[str], list[str], list[str]]: </div>
+<div class="line"><span class="lineno">   61</span>        <span class="stringliteral">&quot;&quot;&quot;! Функция объдинения списков информации о кнопках для .</span></div>
+<div class="line"><span class="lineno">   62</span><span class="stringliteral"></span> </div>
+<div class="line"><span class="lineno">   63</span><span class="stringliteral">        @param all_results - записи выборки из базы данных.</span></div>
+<div class="line"><span class="lineno">   64</span><span class="stringliteral"></span> </div>
+<div class="line"><span class="lineno">   65</span><span class="stringliteral">        Переменные:</span></div>
+<div class="line"><span class="lineno">   66</span><span class="stringliteral">            1. counts_buttons - количество кнопок в ряду.</span></div>
+<div class="line"><span class="lineno">   67</span><span class="stringliteral">            2. name_button - названия кнопок.</span></div>
+<div class="line"><span class="lineno">   68</span><span class="stringliteral">            3. callback_buttons - callback кнопок.</span></div>
+<div class="line"><span class="lineno">   69</span><span class="stringliteral"></span> </div>
+<div class="line"><span class="lineno">   70</span><span class="stringliteral">        @return Объединенные списки информации о кнопках.</span></div>
+<div class="line"><span class="lineno">   71</span><span class="stringliteral">        &quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno">   72</span>        counts_buttons = list()</div>
+<div class="line"><span class="lineno">   73</span>        name_buttons = list()</div>
+<div class="line"><span class="lineno">   74</span>        callback_buttons = list()</div>
+<div class="line"><span class="lineno">   75</span>        <span class="keywordflow">for</span> k <span class="keywordflow">in</span> all_results:</div>
+<div class="line"><span class="lineno">   76</span>            name_buttons.append(k[0])</div>
+<div class="line"><span class="lineno">   77</span>            callback_buttons.append(k[1])</div>
+<div class="line"><span class="lineno">   78</span>            counts_buttons.append(k[2])</div>
+<div class="line"><span class="lineno">   79</span>        <span class="keywordflow">return</span> name_buttons, callback_buttons, counts_buttons    </div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ac3f14876ea9b6ac4df1380aee45258fe" name="ac3f14876ea9b6ac4df1380aee45258fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3f14876ea9b6ac4df1380aee45258fe">&#9670;&#160;</a></span>select_on_callback_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> list[str] database.tables.button.Button.select_on_callback_data </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">str</td>          <td class="paramname"><span class="paramname"><em>cb_data</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция выборки информации о кнопке по callback. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cb_data</td><td>- название меню.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Переменные:</p><ol type="1">
+<li>all_results - записи выборки из базы данных.</li>
+</ol>
+<dl class="section return"><dt>Возвращает</dt><dd>Сформированный список информации о кнопке. </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">   44</span>    <span class="keyword">def </span>select_on_callback_data(self, cb_data: str) -&gt; list[str]: </div>
+<div class="line"><span class="lineno">   45</span>        <span class="stringliteral">&quot;&quot;&quot;! Функция выборки информации о кнопке по callback.</span></div>
+<div class="line"><span class="lineno">   46</span><span class="stringliteral"></span> </div>
+<div class="line"><span class="lineno">   47</span><span class="stringliteral">        @param cb_data - название меню.</span></div>
+<div class="line"><span class="lineno">   48</span><span class="stringliteral"></span> </div>
+<div class="line"><span class="lineno">   49</span><span class="stringliteral">        Переменные:</span></div>
+<div class="line"><span class="lineno">   50</span><span class="stringliteral">            1. all_results - записи выборки из базы данных.</span></div>
+<div class="line"><span class="lineno">   51</span><span class="stringliteral"></span> </div>
+<div class="line"><span class="lineno">   52</span><span class="stringliteral">        @return Сформированный список информации о кнопке.</span></div>
+<div class="line"><span class="lineno">   53</span><span class="stringliteral">        &quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno">   54</span>        self.connect_db()</div>
+<div class="line"><span class="lineno">   55</span>        self.cursor.execute(self.query_on_callback_data, (cb_data,))</div>
+<div class="line"><span class="lineno">   56</span>        all_results = self.cursor.fetchall()</div>
+<div class="line"><span class="lineno">   57</span>        self.sqlite_connection.close()</div>
+<div class="line"><span class="lineno">   58</span>        <span class="keywordflow">return</span> self.parser_in_union(all_results)</div>
+<div class="line"><span class="lineno">   59</span> </div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a6003354f01311d2e46533fb406f2b9ac" name="a6003354f01311d2e46533fb406f2b9ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6003354f01311d2e46533fb406f2b9ac">&#9670;&#160;</a></span>select_on_menu_name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> list[str] database.tables.button.Button.select_on_menu_name </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">str</td>          <td class="paramname"><span class="paramname"><em>menu_name</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция выборки кнопок по названию меню. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">menu_name</td><td>- название меню.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Переменные:</p><ol type="1">
+<li>all_results - записи выборки из базы данных.</li>
+</ol>
+<dl class="section return"><dt>Возвращает</dt><dd>Сформированный список информации о кнопках. </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">   28</span>    <span class="keyword">def </span>select_on_menu_name(self, menu_name: str) -&gt; list[str]:</div>
+<div class="line"><span class="lineno">   29</span>        <span class="stringliteral">&quot;&quot;&quot;! Функция выборки кнопок по названию меню.</span></div>
+<div class="line"><span class="lineno">   30</span><span class="stringliteral"></span> </div>
+<div class="line"><span class="lineno">   31</span><span class="stringliteral">        @param menu_name - название меню.</span></div>
+<div class="line"><span class="lineno">   32</span><span class="stringliteral"></span> </div>
+<div class="line"><span class="lineno">   33</span><span class="stringliteral">        Переменные:</span></div>
+<div class="line"><span class="lineno">   34</span><span class="stringliteral">            1. all_results - записи выборки из базы данных.</span></div>
+<div class="line"><span class="lineno">   35</span><span class="stringliteral"></span> </div>
+<div class="line"><span class="lineno">   36</span><span class="stringliteral">        @return Сформированный список информации о кнопках.</span></div>
+<div class="line"><span class="lineno">   37</span><span class="stringliteral">        &quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno">   38</span>        self.connect_db()</div>
+<div class="line"><span class="lineno">   39</span>        self.cursor.execute(self.query_on_menu_name, (menu_name,))</div>
+<div class="line"><span class="lineno">   40</span>        all_results = self.cursor.fetchall()</div>
+<div class="line"><span class="lineno">   41</span>        self.sqlite_connection.close()</div>
+<div class="line"><span class="lineno">   42</span>        <span class="keywordflow">return</span> self.parser_in_union(all_results)</div>
+<div class="line"><span class="lineno">   43</span> </div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Данные класса</h2>
+<a id="a2566234dc5b5fe2b5fa3006602741770" name="a2566234dc5b5fe2b5fa3006602741770"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2566234dc5b5fe2b5fa3006602741770">&#9670;&#160;</a></span>create_query</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">database.tables.button.Button.create_query</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Запрос создания таблицы. </p>
+
+</div>
+</div>
+<a id="aebbdb8d7fc2ccce75179987eafc532d4" name="aebbdb8d7fc2ccce75179987eafc532d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aebbdb8d7fc2ccce75179987eafc532d4">&#9670;&#160;</a></span>data_to_db</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">database.tables.button.Button.data_to_db</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Данные для добавления в таблицу. </p>
+
+</div>
+</div>
+<a id="ac20753f8616b15c739b5c01647c6ed96" name="ac20753f8616b15c739b5c01647c6ed96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac20753f8616b15c739b5c01647c6ed96">&#9670;&#160;</a></span>query_insert</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">database.tables.button.Button.query_insert</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Запрос добавления в таблицу. </p>
+
+</div>
+</div>
+<a id="a679eedd5ae82bbc5d756df31d75c24bb" name="a679eedd5ae82bbc5d756df31d75c24bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a679eedd5ae82bbc5d756df31d75c24bb">&#9670;&#160;</a></span>query_on_callback_data</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">database.tables.button.Button.query_on_callback_data</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Запрос выборки кнопок для меню по callback_data. </p>
+
+</div>
+</div>
+<a id="a985ce3118b8408b375c295711c21e05d" name="a985ce3118b8408b375c295711c21e05d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a985ce3118b8408b375c295711c21e05d">&#9670;&#160;</a></span>query_on_menu_name</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">database.tables.button.Button.query_on_menu_name</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Запрос выборки кнопок по названию меню. </p>
+
+</div>
+</div>
+<a id="a4832100223fd4fddf3c7698c7e55306c" name="a4832100223fd4fddf3c7698c7e55306c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4832100223fd4fddf3c7698c7e55306c">&#9670;&#160;</a></span>query_select_all</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">database.tables.button.Button.query_select_all</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Запрос выборки всех записей таблицы. </p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li><a class="el" href="">button.py</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

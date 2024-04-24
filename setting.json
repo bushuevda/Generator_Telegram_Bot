@@ -1,0 +1,8 @@
+{"settings":
+    {
+        "NAME_DB": "database.dbo",
+        "BOT_TOKEN": "",
+        "WELCOME_MESSAGE": "Привет!",
+        "PASSWORD_REGISTRATION" : ""
+    }
+}

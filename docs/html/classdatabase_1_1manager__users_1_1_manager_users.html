@@ -1,0 +1,704 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Генераторт телеграм бота: Класс database.manager_users.ManagerUsers</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Генераторт телеграм бота<span id="projectnumber">&#160;1.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacedatabase.html">database</a></li><li class="navelem"><a class="el" href="namespacedatabase_1_1manager__users.html">manager_users</a></li><li class="navelem"><a class="el" href="classdatabase_1_1manager__users_1_1_manager_users.html">ManagerUsers</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pub-attribs">Открытые атрибуты</a> &#124;
+<a href="classdatabase_1_1manager__users_1_1_manager_users-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle"><div class="title">Класс database.manager_users.ManagerUsers</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Класс манипулирования информации о пользователях.  
+ <a href="#details">Подробнее...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a61addc9ffa816bafd9ead0bb5b1b95a3" id="r_a61addc9ffa816bafd9ead0bb5b1b95a3"><td class="memItemLeft" align="right" valign="top">None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a61addc9ffa816bafd9ead0bb5b1b95a3">__init__</a> (self, dict dict_users, str name_db)</td></tr>
+<tr class="separator:a61addc9ffa816bafd9ead0bb5b1b95a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f9579a96efe993dcfe64358564eadbd" id="r_a8f9579a96efe993dcfe64358564eadbd"><td class="memItemLeft" align="right" valign="top">dict&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8f9579a96efe993dcfe64358564eadbd">get_users</a> (self)</td></tr>
+<tr class="memdesc:a8f9579a96efe993dcfe64358564eadbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения словаря пользователей.  <br /></td></tr>
+<tr class="separator:a8f9579a96efe993dcfe64358564eadbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4d2ca19139c3ee403fa0f2008aa91cb" id="r_ab4d2ca19139c3ee403fa0f2008aa91cb"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab4d2ca19139c3ee403fa0f2008aa91cb">get_user_name</a> (self, int id_account)</td></tr>
+<tr class="memdesc:ab4d2ca19139c3ee403fa0f2008aa91cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения имени пользователя по id аккаунта.  <br /></td></tr>
+<tr class="separator:ab4d2ca19139c3ee403fa0f2008aa91cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d37c6cd7d38444e2c9a61bdfdc21042" id="r_a0d37c6cd7d38444e2c9a61bdfdc21042"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0d37c6cd7d38444e2c9a61bdfdc21042">check_user</a> (self, int id_account)</td></tr>
+<tr class="memdesc:a0d37c6cd7d38444e2c9a61bdfdc21042"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения статуса пользователя.  <br /></td></tr>
+<tr class="separator:a0d37c6cd7d38444e2c9a61bdfdc21042"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afccb3f8f4aae8d108bb35f7a60f26511" id="r_afccb3f8f4aae8d108bb35f7a60f26511"><td class="memItemLeft" align="right" valign="top">None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afccb3f8f4aae8d108bb35f7a60f26511">registration</a> (self, str name_user, int id_account)</td></tr>
+<tr class="memdesc:afccb3f8f4aae8d108bb35f7a60f26511"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция регистрации пользователя.  <br /></td></tr>
+<tr class="separator:afccb3f8f4aae8d108bb35f7a60f26511"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05b50540898ed06b092a1e6cde0bc4c1" id="r_a05b50540898ed06b092a1e6cde0bc4c1"><td class="memItemLeft" align="right" valign="top">None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a05b50540898ed06b092a1e6cde0bc4c1">push_ban</a> (self, int id_account)</td></tr>
+<tr class="memdesc:a05b50540898ed06b092a1e6cde0bc4c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция добавления пользователя в категорию 'Черный список'.  <br /></td></tr>
+<tr class="separator:a05b50540898ed06b092a1e6cde0bc4c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa52f64d31c61b512cfe841a0a28d5c0a" id="r_aa52f64d31c61b512cfe841a0a28d5c0a"><td class="memItemLeft" align="right" valign="top">None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa52f64d31c61b512cfe841a0a28d5c0a">pop_ban</a> (self, int id_account)</td></tr>
+<tr class="memdesc:aa52f64d31c61b512cfe841a0a28d5c0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция добавления пользователя в категорию 'Обычный пользователь'.  <br /></td></tr>
+<tr class="separator:aa52f64d31c61b512cfe841a0a28d5c0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aede78effed8f0daf10d2846596c568ff" id="r_aede78effed8f0daf10d2846596c568ff"><td class="memItemLeft" align="right" valign="top">None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aede78effed8f0daf10d2846596c568ff">set_admin</a> (self, int id_account)</td></tr>
+<tr class="memdesc:aede78effed8f0daf10d2846596c568ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция добавления пользователя в категорию 'Администратор'.  <br /></td></tr>
+<tr class="separator:aede78effed8f0daf10d2846596c568ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cd104c703e368d60d19a50558279a8a" id="r_a6cd104c703e368d60d19a50558279a8a"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6cd104c703e368d60d19a50558279a8a">get_admin_users</a> (self)</td></tr>
+<tr class="memdesc:a6cd104c703e368d60d19a50558279a8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения пользователей категории 'Администратор'.  <br /></td></tr>
+<tr class="separator:a6cd104c703e368d60d19a50558279a8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5930c4d27d469849a4426d2d14d2ce04" id="r_a5930c4d27d469849a4426d2d14d2ce04"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5930c4d27d469849a4426d2d14d2ce04">get_ban_users</a> (self)</td></tr>
+<tr class="memdesc:a5930c4d27d469849a4426d2d14d2ce04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения пользователей категории 'Черный список'.  <br /></td></tr>
+<tr class="separator:a5930c4d27d469849a4426d2d14d2ce04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b9baebc8444a805d5d09fd964319479" id="r_a7b9baebc8444a805d5d09fd964319479"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7b9baebc8444a805d5d09fd964319479">get_usual_users</a> (self)</td></tr>
+<tr class="memdesc:a7b9baebc8444a805d5d09fd964319479"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения пользователей категории 'Обычный пользователь'.  <br /></td></tr>
+<tr class="separator:a7b9baebc8444a805d5d09fd964319479"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac812e3b4c988fb13da8be1fcf81053d0" id="r_ac812e3b4c988fb13da8be1fcf81053d0"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac812e3b4c988fb13da8be1fcf81053d0">parser_list_users</a> (self, list[str] list_users, str title)</td></tr>
+<tr class="memdesc:ac812e3b4c988fb13da8be1fcf81053d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция формирования строки списка пользователей для определенной категории.  <br /></td></tr>
+<tr class="separator:ac812e3b4c988fb13da8be1fcf81053d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Открытые атрибуты</h2></td></tr>
+<tr class="memitem:a3b58d8662c64410089ed96e40f32ad44" id="r_a3b58d8662c64410089ed96e40f32ad44"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3b58d8662c64410089ed96e40f32ad44">dict_user</a></td></tr>
+<tr class="memdesc:a3b58d8662c64410089ed96e40f32ad44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Словарь пользователей.  <br /></td></tr>
+<tr class="separator:a3b58d8662c64410089ed96e40f32ad44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee1b86c2c40fb58a83e5f4f785d8c132" id="r_aee1b86c2c40fb58a83e5f4f785d8c132"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aee1b86c2c40fb58a83e5f4f785d8c132">table_user</a></td></tr>
+<tr class="memdesc:aee1b86c2c40fb58a83e5f4f785d8c132"><td class="mdescLeft">&#160;</td><td class="mdescRight">Объект класса User.  <br /></td></tr>
+<tr class="separator:aee1b86c2c40fb58a83e5f4f785d8c132"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5020a93929b859c84442574f53c640d2" id="r_a5020a93929b859c84442574f53c640d2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5020a93929b859c84442574f53c640d2">table_list_users</a></td></tr>
+<tr class="memdesc:a5020a93929b859c84442574f53c640d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Объект класса ListUsers.  <br /></td></tr>
+<tr class="separator:a5020a93929b859c84442574f53c640d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addda24e479d3096508118799266e3f46" id="r_addda24e479d3096508118799266e3f46"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#addda24e479d3096508118799266e3f46">state_user</a></td></tr>
+<tr class="memdesc:addda24e479d3096508118799266e3f46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Состояния пользователей.  <br /></td></tr>
+<tr class="separator:addda24e479d3096508118799266e3f46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Класс манипулирования информации о пользователях. </p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
+<a id="a61addc9ffa816bafd9ead0bb5b1b95a3" name="a61addc9ffa816bafd9ead0bb5b1b95a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61addc9ffa816bafd9ead0bb5b1b95a3">&#9670;&#160;</a></span>__init__()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> None database.manager_users.ManagerUsers.__init__ </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">dict</td>          <td class="paramname"><span class="paramname"><em>dict_users</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">str</td>          <td class="paramname"><span class="paramname"><em>name_db</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">    9</span>    <span class="keyword">def </span>__init__(self, dict_users: dict, name_db: str) -&gt; <span class="keywordtype">None</span>:</div>
+<div class="line"><span class="lineno">   10</span>        </div>
+<div class="line"><span class="lineno">   11</span>        self.dict_user = dict_users</div>
+<div class="line"><span class="lineno">   12</span>        </div>
+<div class="line"><span class="lineno">   13</span>        self.table_user = User(name_db = name_db)</div>
+<div class="line"><span class="lineno">   14</span>        </div>
+<div class="line"><span class="lineno">   15</span>        self.table_list_users = ListUsers(name_db = name_db)</div>
+<div class="line"><span class="lineno">   16</span>        </div>
+<div class="line"><span class="lineno">   17</span>        self.state_user = (<span class="stringliteral">&#39;пользователь&#39;</span>, <span class="stringliteral">&#39;администратор&#39;</span>, <span class="stringliteral">&#39;черный список&#39;</span>, <span class="stringliteral">&#39;не зарегистрирван&#39;</span>,)</div>
+<div class="line"><span class="lineno">   18</span> </div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="a0d37c6cd7d38444e2c9a61bdfdc21042" name="a0d37c6cd7d38444e2c9a61bdfdc21042"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d37c6cd7d38444e2c9a61bdfdc21042">&#9670;&#160;</a></span>check_user()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> str database.manager_users.ManagerUsers.check_user </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>id_account</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция получения статуса пользователя. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id_account</td><td>- id аккаунта.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Переменные:</p><ol type="1">
+<li>state_check - категория пользователя.</li>
+</ol>
+<p>Условия:</p><ol type="1">
+<li>Если str.lower(state_check[0][0]) == self.state_user[0], то возвращается статус 'Обычный пользователь'.</li>
+<li>Если str.lower(state_check[0][0]) == self.state_user[0], то возвращается статус 'Администратор'.</li>
+<li>Если str.lower(state_check[0][0]) == self.state_user[0], то возвращается статус 'Черный список'.</li>
+</ol>
+<dl class="section return"><dt>Возвращает</dt><dd>self.state_user. </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">   35</span>    <span class="keyword">def </span>check_user(self, id_account: int) -&gt; str:</div>
+<div class="line"><span class="lineno">   36</span>        <span class="stringliteral">&quot;&quot;&quot;! Функция получения статуса пользователя.</span></div>
+<div class="line"><span class="lineno">   37</span><span class="stringliteral"></span> </div>
+<div class="line"><span class="lineno">   38</span><span class="stringliteral">        @param id_account - id аккаунта.</span></div>
+<div class="line"><span class="lineno">   39</span><span class="stringliteral"></span> </div>
+<div class="line"><span class="lineno">   40</span><span class="stringliteral">        Переменные:</span></div>
+<div class="line"><span class="lineno">   41</span><span class="stringliteral">            1. state_check - категория пользователя.</span></div>
+<div class="line"><span class="lineno">   42</span><span class="stringliteral">        </span></div>
+<div class="line"><span class="lineno">   43</span><span class="stringliteral">        Условия:</span></div>
+<div class="line"><span class="lineno">   44</span><span class="stringliteral">            1. Если str.lower(state_check[0][0]) == self.state_user[0], то возвращается статус &#39;Обычный пользователь&#39;.</span></div>
+<div class="line"><span class="lineno">   45</span><span class="stringliteral">            2. Если str.lower(state_check[0][0]) == self.state_user[0], то возвращается статус &#39;Администратор&#39;.</span></div>
+<div class="line"><span class="lineno">   46</span><span class="stringliteral">            3. Если str.lower(state_check[0][0]) == self.state_user[0], то возвращается статус &#39;Черный список&#39;.</span></div>
+<div class="line"><span class="lineno">   47</span><span class="stringliteral"></span> </div>
+<div class="line"><span class="lineno">   48</span><span class="stringliteral">        @return self.state_user.</span></div>
+<div class="line"><span class="lineno">   49</span><span class="stringliteral">        &quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno">   50</span>        state_check = self.table_user.select_category_on_id_account(id_account = id_account)</div>
+<div class="line"><span class="lineno">   51</span>        <span class="keywordflow">if</span> len(state_check) &gt; 0:</div>
+<div class="line"><span class="lineno">   52</span>            <span class="keywordflow">if</span> str.lower(state_check[0][0]) == self.state_user[0]:</div>
+<div class="line"><span class="lineno">   53</span>                <span class="keywordflow">return</span> self.state_user[0]</div>
+<div class="line"><span class="lineno">   54</span>            <span class="keywordflow">elif</span> str.lower(state_check[0][0]) == self.state_user[1]:</div>
+<div class="line"><span class="lineno">   55</span>                <span class="keywordflow">return</span> self.state_user[1]</div>
+<div class="line"><span class="lineno">   56</span>            <span class="keywordflow">elif</span> str.lower(state_check[0][0]) == self.state_user[2]:</div>
+<div class="line"><span class="lineno">   57</span>                <span class="keywordflow">return</span> self.state_user[2]</div>
+<div class="line"><span class="lineno">   58</span>        <span class="keywordflow">else</span>:</div>
+<div class="line"><span class="lineno">   59</span>            <span class="keywordflow">return</span> self.state_user[3]</div>
+<div class="line"><span class="lineno">   60</span>        </div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a6cd104c703e368d60d19a50558279a8a" name="a6cd104c703e368d60d19a50558279a8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6cd104c703e368d60d19a50558279a8a">&#9670;&#160;</a></span>get_admin_users()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> str database.manager_users.ManagerUsers.get_admin_users </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция получения пользователей категории 'Администратор'. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Пользователи категории 'Администратор'. </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">  115</span>    <span class="keyword">def </span>get_admin_users(self) -&gt; str:</div>
+<div class="line"><span class="lineno">  116</span>        <span class="stringliteral">&quot;&quot;&quot;! Функция получения пользователей  категории &#39;Администратор&#39;.</span></div>
+<div class="line"><span class="lineno">  117</span><span class="stringliteral"></span> </div>
+<div class="line"><span class="lineno">  118</span><span class="stringliteral">        @return Пользователи категории &#39;Администратор&#39;.</span></div>
+<div class="line"><span class="lineno">  119</span><span class="stringliteral">        &quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno">  120</span>        <span class="keywordflow">return</span> self.parser_list_users(self.table_user.select_user_on_category(<span class="stringliteral">&#39;Администратор&#39;</span>), title = <span class="stringliteral">&#39;Администраторы:\n&#39;</span>)</div>
+<div class="line"><span class="lineno">  121</span> </div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a5930c4d27d469849a4426d2d14d2ce04" name="a5930c4d27d469849a4426d2d14d2ce04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5930c4d27d469849a4426d2d14d2ce04">&#9670;&#160;</a></span>get_ban_users()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> str database.manager_users.ManagerUsers.get_ban_users </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция получения пользователей категории 'Черный список'. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Пользователи категории 'Черный список'. </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">  122</span>    <span class="keyword">def </span>get_ban_users(self) -&gt; str:</div>
+<div class="line"><span class="lineno">  123</span>        <span class="stringliteral">&quot;&quot;&quot;! Функция получения пользователей  категории &#39;Черный список&#39;.</span></div>
+<div class="line"><span class="lineno">  124</span><span class="stringliteral"></span> </div>
+<div class="line"><span class="lineno">  125</span><span class="stringliteral">        @return Пользователи категории &#39;Черный список&#39;.</span></div>
+<div class="line"><span class="lineno">  126</span><span class="stringliteral">        &quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno">  127</span>        <span class="keywordflow">return</span> self.parser_list_users(self.table_user.select_user_on_category(<span class="stringliteral">&#39;Черный список&#39;</span>), title = <span class="stringliteral">&#39;Черный список:\n&#39;</span>)</div>
+<div class="line"><span class="lineno">  128</span> </div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ab4d2ca19139c3ee403fa0f2008aa91cb" name="ab4d2ca19139c3ee403fa0f2008aa91cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4d2ca19139c3ee403fa0f2008aa91cb">&#9670;&#160;</a></span>get_user_name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> str database.manager_users.ManagerUsers.get_user_name </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>id_account</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция получения имени пользователя по id аккаунта. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id_account</td><td>- id аккаунта.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Имя пользователя. </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">   26</span>    <span class="keyword">def </span>get_user_name(self, id_account: int) -&gt; str:</div>
+<div class="line"><span class="lineno">   27</span>        <span class="stringliteral">&quot;&quot;&quot;! Функция получения имени пользователя по id аккаунта.</span></div>
+<div class="line"><span class="lineno">   28</span><span class="stringliteral"></span> </div>
+<div class="line"><span class="lineno">   29</span><span class="stringliteral">        @param id_account - id аккаунта.</span></div>
+<div class="line"><span class="lineno">   30</span><span class="stringliteral"></span> </div>
+<div class="line"><span class="lineno">   31</span><span class="stringliteral">        @return Имя пользователя.</span></div>
+<div class="line"><span class="lineno">   32</span><span class="stringliteral">        &quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno">   33</span>        <span class="keywordflow">return</span> self.dict_user.get(id_account)</div>
+<div class="line"><span class="lineno">   34</span>    </div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a8f9579a96efe993dcfe64358564eadbd" name="a8f9579a96efe993dcfe64358564eadbd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f9579a96efe993dcfe64358564eadbd">&#9670;&#160;</a></span>get_users()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> dict database.manager_users.ManagerUsers.get_users </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция получения словаря пользователей. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Словарь пользователей. </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">   19</span>    <span class="keyword">def </span>get_users(self) -&gt; dict:</div>
+<div class="line"><span class="lineno">   20</span>        <span class="stringliteral">&quot;&quot;&quot;! Функция получения словаря пользователей.</span></div>
+<div class="line"><span class="lineno">   21</span><span class="stringliteral"></span> </div>
+<div class="line"><span class="lineno">   22</span><span class="stringliteral">        @return Словарь пользователей.</span></div>
+<div class="line"><span class="lineno">   23</span><span class="stringliteral">        &quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno">   24</span>        <span class="keywordflow">return</span> self.dict_user</div>
+<div class="line"><span class="lineno">   25</span> </div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a7b9baebc8444a805d5d09fd964319479" name="a7b9baebc8444a805d5d09fd964319479"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b9baebc8444a805d5d09fd964319479">&#9670;&#160;</a></span>get_usual_users()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> str database.manager_users.ManagerUsers.get_usual_users </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция получения пользователей категории 'Обычный пользователь'. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Пользователи категории 'Обычный пользователь'. </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">  129</span>    <span class="keyword">def </span>get_usual_users(self) -&gt; str:</div>
+<div class="line"><span class="lineno">  130</span>        <span class="stringliteral">&quot;&quot;&quot;! Функция получения пользователей  категории &#39;Обычный пользователь&#39;.</span></div>
+<div class="line"><span class="lineno">  131</span><span class="stringliteral"></span> </div>
+<div class="line"><span class="lineno">  132</span><span class="stringliteral">        @return Пользователи категории &#39;Обычный пользователь&#39;.</span></div>
+<div class="line"><span class="lineno">  133</span><span class="stringliteral">        &quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno">  134</span>        <span class="keywordflow">return</span> self.parser_list_users(self.table_user.select_user_on_category(<span class="stringliteral">&#39;Пользователь&#39;</span>), title = <span class="stringliteral">&#39;Обычные пользователи:\n&#39;</span>)</div>
+<div class="line"><span class="lineno">  135</span> </div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ac812e3b4c988fb13da8be1fcf81053d0" name="ac812e3b4c988fb13da8be1fcf81053d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac812e3b4c988fb13da8be1fcf81053d0">&#9670;&#160;</a></span>parser_list_users()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> str database.manager_users.ManagerUsers.parser_list_users </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">list[str]</td>          <td class="paramname"><span class="paramname"><em>list_users</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">str</td>          <td class="paramname"><span class="paramname"><em>title</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция формирования строки списка пользователей для определенной категории. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">list_users</td><td>- список пользователей определенной категории. </td></tr>
+    <tr><td class="paramname">title</td><td>- название категории.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Пользователи определенной категории. </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">  136</span>    <span class="keyword">def </span>parser_list_users(self, list_users: list[str], title: str) -&gt; str:</div>
+<div class="line"><span class="lineno">  137</span>        <span class="stringliteral">&quot;&quot;&quot;! Функция формирования строки списка пользователей для определенной категории.</span></div>
+<div class="line"><span class="lineno">  138</span><span class="stringliteral">        </span></div>
+<div class="line"><span class="lineno">  139</span><span class="stringliteral">        @param list_users - список пользователей определенной категории.</span></div>
+<div class="line"><span class="lineno">  140</span><span class="stringliteral">        @param title - название категории.</span></div>
+<div class="line"><span class="lineno">  141</span><span class="stringliteral"></span> </div>
+<div class="line"><span class="lineno">  142</span><span class="stringliteral">        @return Пользователи определенной категории.</span></div>
+<div class="line"><span class="lineno">  143</span><span class="stringliteral">        &quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno">  144</span>        str_parsed = title</div>
+<div class="line"><span class="lineno">  145</span>        <span class="keywordflow">for</span> k <span class="keywordflow">in</span> list_users:</div>
+<div class="line"><span class="lineno">  146</span>            str_parsed = str_parsed + str(k[0]) + <span class="stringliteral">&quot;  -  &quot;</span> + str(k[1]) + <span class="stringliteral">&quot;\n&quot;</span></div>
+<div class="line"><span class="lineno">  147</span>        <span class="keywordflow">return</span> str_parsed</div>
+<div class="line"><span class="lineno">  148</span> </div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aa52f64d31c61b512cfe841a0a28d5c0a" name="aa52f64d31c61b512cfe841a0a28d5c0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa52f64d31c61b512cfe841a0a28d5c0a">&#9670;&#160;</a></span>pop_ban()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> None database.manager_users.ManagerUsers.pop_ban </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>id_account</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция добавления пользователя в категорию 'Обычный пользователь'. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id_account</td><td>- id аккаунта.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Переменные:</p><ol type="1">
+<li>id_user - id пользователя. </li>
+</ol>
+<div class="fragment"><div class="line"><span class="lineno">   89</span>    <span class="keyword">def </span>pop_ban(self, id_account: int) -&gt; <span class="keywordtype">None</span>:</div>
+<div class="line"><span class="lineno">   90</span>        <span class="stringliteral">&quot;&quot;&quot;! Функция добавления пользователя в категорию &#39;Обычный пользователь&#39;.</span></div>
+<div class="line"><span class="lineno">   91</span><span class="stringliteral"></span> </div>
+<div class="line"><span class="lineno">   92</span><span class="stringliteral">        @param id_account - id аккаунта.</span></div>
+<div class="line"><span class="lineno">   93</span><span class="stringliteral"></span> </div>
+<div class="line"><span class="lineno">   94</span><span class="stringliteral">        Переменные:</span></div>
+<div class="line"><span class="lineno">   95</span><span class="stringliteral">            1. id_user - id пользователя.</span></div>
+<div class="line"><span class="lineno">   96</span><span class="stringliteral">        &quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno">   97</span>        <span class="keywordflow">if</span> id_account:</div>
+<div class="line"><span class="lineno">   98</span>            id_user = self.table_user.select_id_user_on_id_account(id_account = id_account)</div>
+<div class="line"><span class="lineno">   99</span>            <span class="keywordflow">if</span> id_user:</div>
+<div class="line"><span class="lineno">  100</span>                self.table_list_users.update_notban(id_user = id_user[0][0])</div>
+<div class="line"><span class="lineno">  101</span> </div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a05b50540898ed06b092a1e6cde0bc4c1" name="a05b50540898ed06b092a1e6cde0bc4c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05b50540898ed06b092a1e6cde0bc4c1">&#9670;&#160;</a></span>push_ban()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> None database.manager_users.ManagerUsers.push_ban </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>id_account</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция добавления пользователя в категорию 'Черный список'. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id_account</td><td>- id аккаунта.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Переменные:</p><ol type="1">
+<li>id_user - id пользователя. </li>
+</ol>
+<div class="fragment"><div class="line"><span class="lineno">   76</span>    <span class="keyword">def </span>push_ban(self, id_account: int) -&gt; <span class="keywordtype">None</span>:</div>
+<div class="line"><span class="lineno">   77</span>        <span class="stringliteral">&quot;&quot;&quot;! Функция добавления пользователя в категорию &#39;Черный список&#39;.</span></div>
+<div class="line"><span class="lineno">   78</span><span class="stringliteral"></span> </div>
+<div class="line"><span class="lineno">   79</span><span class="stringliteral">        @param id_account - id аккаунта.</span></div>
+<div class="line"><span class="lineno">   80</span><span class="stringliteral"></span> </div>
+<div class="line"><span class="lineno">   81</span><span class="stringliteral">        Переменные:</span></div>
+<div class="line"><span class="lineno">   82</span><span class="stringliteral">            1. id_user - id пользователя.</span></div>
+<div class="line"><span class="lineno">   83</span><span class="stringliteral">        &quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno">   84</span>        <span class="keywordflow">if</span> id_account:</div>
+<div class="line"><span class="lineno">   85</span>            id_user = self.table_user.select_id_user_on_id_account(id_account = id_account)</div>
+<div class="line"><span class="lineno">   86</span>            <span class="keywordflow">if</span> id_user:</div>
+<div class="line"><span class="lineno">   87</span>                self.table_list_users.update_ban(id_user = id_user[0][0])</div>
+<div class="line"><span class="lineno">   88</span>    </div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="afccb3f8f4aae8d108bb35f7a60f26511" name="afccb3f8f4aae8d108bb35f7a60f26511"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afccb3f8f4aae8d108bb35f7a60f26511">&#9670;&#160;</a></span>registration()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> None database.manager_users.ManagerUsers.registration </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">str</td>          <td class="paramname"><span class="paramname"><em>name_user</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>id_account</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция регистрации пользователя. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name_user</td><td>- имя пользователя. </td></tr>
+    <tr><td class="paramname">id_account</td><td>- id аккаунта.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Переменные:</p><ol type="1">
+<li>id_last_user - id последнего пользователя в базе данных. </li>
+</ol>
+<div class="fragment"><div class="line"><span class="lineno">   61</span>    <span class="keyword">def </span>registration(self, name_user: str, id_account: int) -&gt; <span class="keywordtype">None</span>:</div>
+<div class="line"><span class="lineno">   62</span>        <span class="stringliteral">&quot;&quot;&quot;! Функция регистрации пользователя.</span></div>
+<div class="line"><span class="lineno">   63</span><span class="stringliteral"></span> </div>
+<div class="line"><span class="lineno">   64</span><span class="stringliteral">        @param name_user - имя пользователя.</span></div>
+<div class="line"><span class="lineno">   65</span><span class="stringliteral">        @param id_account - id аккаунта.</span></div>
+<div class="line"><span class="lineno">   66</span><span class="stringliteral"></span> </div>
+<div class="line"><span class="lineno">   67</span><span class="stringliteral">        Переменные:</span></div>
+<div class="line"><span class="lineno">   68</span><span class="stringliteral">            1. id_last_user - id последнего пользователя в базе данных.</span></div>
+<div class="line"><span class="lineno">   69</span><span class="stringliteral">        &quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno">   70</span>        <span class="keywordflow">if</span> name_user <span class="keywordflow">and</span> id_account:</div>
+<div class="line"><span class="lineno">   71</span>            self.table_user.insert_user(name_user, id_account)</div>
+<div class="line"><span class="lineno">   72</span>            id_last_user = self.table_user.get_last_row() </div>
+<div class="line"><span class="lineno">   73</span>            self.table_list_users.insert((id_last_user, 1))</div>
+<div class="line"><span class="lineno">   74</span>            self.dict_user[id_account] = name_user</div>
+<div class="line"><span class="lineno">   75</span>        </div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aede78effed8f0daf10d2846596c568ff" name="aede78effed8f0daf10d2846596c568ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aede78effed8f0daf10d2846596c568ff">&#9670;&#160;</a></span>set_admin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> None database.manager_users.ManagerUsers.set_admin </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>id_account</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция добавления пользователя в категорию 'Администратор'. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id_account</td><td>- id аккаунта.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Переменные:</p><ol type="1">
+<li>id_user - id пользователя. </li>
+</ol>
+<div class="fragment"><div class="line"><span class="lineno">  102</span>    <span class="keyword">def </span>set_admin(self, id_account: int) -&gt; <span class="keywordtype">None</span>:</div>
+<div class="line"><span class="lineno">  103</span>        <span class="stringliteral">&quot;&quot;&quot;! Функция добавления пользователя в категорию &#39;Администратор&#39;.</span></div>
+<div class="line"><span class="lineno">  104</span><span class="stringliteral"></span> </div>
+<div class="line"><span class="lineno">  105</span><span class="stringliteral">        @param id_account - id аккаунта.</span></div>
+<div class="line"><span class="lineno">  106</span><span class="stringliteral"></span> </div>
+<div class="line"><span class="lineno">  107</span><span class="stringliteral">        Переменные:</span></div>
+<div class="line"><span class="lineno">  108</span><span class="stringliteral">            1. id_user - id пользователя.</span></div>
+<div class="line"><span class="lineno">  109</span><span class="stringliteral">        &quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno">  110</span>        <span class="keywordflow">if</span> id_account:</div>
+<div class="line"><span class="lineno">  111</span>            id_user = self.table_user.select_id_user_on_id_account(id_account = id_account)</div>
+<div class="line"><span class="lineno">  112</span>            <span class="keywordflow">if</span> id_user:</div>
+<div class="line"><span class="lineno">  113</span>                self.table_list_users.update_admin(id_user = id_user[0][0])</div>
+<div class="line"><span class="lineno">  114</span>    </div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Данные класса</h2>
+<a id="a3b58d8662c64410089ed96e40f32ad44" name="a3b58d8662c64410089ed96e40f32ad44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b58d8662c64410089ed96e40f32ad44">&#9670;&#160;</a></span>dict_user</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">database.manager_users.ManagerUsers.dict_user</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Словарь пользователей. </p>
+
+</div>
+</div>
+<a id="addda24e479d3096508118799266e3f46" name="addda24e479d3096508118799266e3f46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#addda24e479d3096508118799266e3f46">&#9670;&#160;</a></span>state_user</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">database.manager_users.ManagerUsers.state_user</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Состояния пользователей. </p>
+
+</div>
+</div>
+<a id="a5020a93929b859c84442574f53c640d2" name="a5020a93929b859c84442574f53c640d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5020a93929b859c84442574f53c640d2">&#9670;&#160;</a></span>table_list_users</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">database.manager_users.ManagerUsers.table_list_users</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Объект класса ListUsers. </p>
+
+</div>
+</div>
+<a id="aee1b86c2c40fb58a83e5f4f785d8c132" name="aee1b86c2c40fb58a83e5f4f785d8c132"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee1b86c2c40fb58a83e5f4f785d8c132">&#9670;&#160;</a></span>table_user</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">database.manager_users.ManagerUsers.table_user</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Объект класса User. </p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li><a class="el" href="">manager_users.py</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>
