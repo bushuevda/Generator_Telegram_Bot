@@ -28,19 +28,20 @@ async def main():
     
 
 if __name__ == "__main__":
-    if len(sys.argv)  >= 2:
+    if len(sys.argv)  > 2:
         if sys.argv[1] == "new_db":
-            if sys.argv[2][-3:] == "dbo":
+            if sys.argv[2][-2:] == "db":
                 from database.create_db import CreateDataBase
                 database = CreateDataBase(NAME_DB)
                 database.create_tables()
                 database.insert_data_to_tables()
             else:
-                print('Необходимо ввести название с расширением .dbo!')
+                print('Необходимо ввести название с расширением .db!')
         else:
             print('Неверная команда!')
             print('Допустимые команды: \n\t python main.py - запуск приложения\n\t python main.py new_db db_name.dbo - создание базы данных')
-        
+    elif len(sys.argv) == 2:
+        print("Не введено название базы данных:\n\t python main.py new_db db_name.dbo")    
     elif len(sys.argv) == 1:
         if NAME_DB and BOT_TOKEN:
             a = GeneratorBot(NAME_DB)
