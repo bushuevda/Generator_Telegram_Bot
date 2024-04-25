@@ -48,7 +48,13 @@ python main.py new_db new_database.db
 | 2       | 2             | 2               |  2            |
 | 3       | 3             | 3               |  3            |
 
- 
+Имя меню должно быть уникальным (name_menu). Подробнее о id_type_menu, id_type_menu.
+[id_type_menu](-таблица-event)
+
+Добавление кнопок для меню:
+
+
+ Button
 | id_button     | name_button | callback_data | line | id_event |
 |---------------|-------------|---------------|------|----------|
 | 1             | button1     | callback1     | 1    | 1        |
@@ -73,6 +79,63 @@ List_Void_Menu
 | 3                 | 3           | 3             |
 
 
+Добавление ключевых слов для меню:
+
+ Key_Word
+| id_key_word   | word      |
+|---------------|-----------|
+| 1             | key_word1 |
+| 2             | key_word2 | 
+| 3             | key_word3 |
+
+List_Key_Words
+| id_list_key_words | id_menu | id_key_word |
+|-------------------|---------|-------------|
+| 1                 | 1       | 1           |
+| 2                 | 2       | 2           |
+| 3                 | 3       | 3           |
+
+
+Добавление информации для меню:
+ Information
+| id_information | id_information |
+|----------------|----------------|
+| 1              | information1   |
+| 2              | information2   | 
+| 3              | information3   |
+
+List_Information
+| id_list_infromation | id_infromation | id_type_infromation |
+|---------------------|----------------|---------------------|
+| 1                   | 1              | 1                   |
+| 2                   | 2              | 2                   |
+| 3                   | 3              | 3                   |
+
+
+Добавление пользователей:
+
+ User
+| id_user | name_account | id_account |
+|---------|--------------|------------|
+| 1       | anecdote1    | 1424242646 |
+| 2       | anecdote2    | 2545454454 |
+| 3       | anecdote3    | 3663532232 |
+
+List_Users
+| id_list_users | id_user | id_category_users |
+|---------------|---------|-------------------|
+| 1             | 1       | 1                 |
+| 2             | 2       | 2                 |
+| 3             | 3       | 3                 |
+
+Добавление анекдотов:
+
+ Anecdote
+| id_anecdote | text_anecdote |
+|-------------|---------------|
+| 1           | anecdote1     |
+| 2           | anecdote2     | 
+| 3           | anecdote3     |
 
 2. Связать добавленную кнопку с созданным меню:
 
