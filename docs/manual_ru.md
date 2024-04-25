@@ -48,8 +48,7 @@ python main.py new_db new_database.db
 | 2       | 2             | 2               |  2            |
 | 3       | 3             | 3               |  3            |
 
-Имя меню должно быть уникальным (name_menu). Подробнее о id_type_menu, id_type_menu.
-[id_type_menu](-таблица-event)
+Имя меню должно быть уникальным (name_menu). Подробнее о id_type_menu смотрите в таблице [id_type_menu](#таблица-type_menu) id_type_menu.
 
 Добавление кнопок для меню:
 
@@ -166,9 +165,9 @@ List_Users
  | 2                   | Изображение |
  | 3                   | Файл        | 
 
- - Таблица Type_Menu:
+ # Таблица Type_Menu:
  
- | id_type_menu | type_menu  |  
+ | @id_type_menu| type_menu  |  
  |--------------|------------|
  | 1            | Reply      |
  | 2            | Inline     |
