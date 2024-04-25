@@ -165,9 +165,9 @@ List_Users
  | 2                   | Изображение |
  | 3                   | Файл        | 
 
- # Таблица Type_Menu:
+ ## Таблица Type_Menu:
  
- | @id_type_menu| type_menu  |  
+ | id_type_menu | type_menu  |  
  |--------------|------------|
  | 1            | Reply      |
  | 2            | Inline     |
