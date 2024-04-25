@@ -62,7 +62,7 @@ class GeneratorBot:
             Переменные:
                 1. data_menu_inline - информация о меню inline.
                 2. menu[1] - name_menu из таблицы Menu.
-                3. menu[2] - id_template_inline из таблицы Menu.
+                3. menu[2] - id_template из таблицы Menu.
                 4. key_words - список ключевых слов для меню.
                 5. keyboard - список кнопок меню.
                 6. text - текст для меню.
@@ -141,7 +141,7 @@ class GeneratorBot:
                 4. path_image - путь к изображению.
                 5. caption - описание изображения.
                 6. menu[0] - name_menu из таблицы Menu.
-                7. menu[1] - id_template_inline из таблицы Menu.
+                7. menu[1] - id_template из таблицы Menu.
                 8. button[2] - callback_data из таблицы Button.
                 
             Условия:

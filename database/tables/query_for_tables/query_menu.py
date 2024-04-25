@@ -10,12 +10,11 @@ query_create = """
     id_category_users INTEGER,
     id_type_menu INTEGER,
     FOREIGN KEY (id_template) REFERENCES Template(id_template),
-    FOREIGN KEY (id_category_users) REFERENCES Category_Users(id_category_users)
     FOREIGN KEY (id_type_menu) REFERENCES Type_Menu(id_type_menu));
 """
 
 #запрос добавления в таблицу Menu
-query_insert = "INSERT INTO Menu (name_menu, id_template, id_category_users, id_type_menu) VALUES(?, ?, ?, ?);" 
+query_insert = "INSERT INTO Menu (name_menu, id_template, id_type_menu) VALUES(?, ?, ?);" 
 
 #запрос выборки всех записей из таблицы Menu
 query_select_all = """ SELECT * FROM Menu;"""

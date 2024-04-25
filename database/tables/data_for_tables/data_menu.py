@@ -7,5 +7,5 @@
 # Порядок элементов следующий: 1 - name_menu, 2 - id_template, 3 - id_category_users, 4 - id_type_menu
 # 
 menu_data = [
-    ['', 1, 1, 1],
+    ['', 1, 1],
 ]
