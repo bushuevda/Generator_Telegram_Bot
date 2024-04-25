@@ -20,8 +20,7 @@ pip install -r requirements.txt
 
 ### Добавление кнопок inline
 
-<<<<<<< HEAD
+
 ### Добавление кнопок reply
-=======
-### Добавление кнопок reply
->>>>>>> e5d750b9b47080fbae276835141ebc8577ac71c8
+
+
