@@ -1,0 +1,247 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Генераторт телеграм бота: Руководство пользователя</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Генераторт телеграм бота<span id="projectnumber">&#160;1.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div><div class="header">
+  <div class="headertitle"><div class="title">Руководство пользователя</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p><a class="anchor" id="autotoc_md1"></a></p><ul>
+<li>Установка библиотек</li>
+<li>Команды приложения</li>
+<li>Настройки приложения</li>
+<li>Заполнение базы данных (примеры)<ul>
+<li>Добавление кнопок inline</li>
+<li>Добавление кнопок reply</li>
+</ul>
+</li>
+<li>Встроенные команды бота</li>
+<li>Панель администратора</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md2"></a>
+Установка библиотек:</h1>
+<p><code> pip install -r requirements.txt </code></p>
+<p><a href="../requirements.txt">Список версий библиотек</a></p>
+<h1><a class="anchor" id="autotoc_md3"></a>
+Команды приложения</h1>
+<p>Запуск приложения:</p>
+<p><code> python <a class="el" href="main_8py.html">main.py</a> </code></p>
+<p>Создание и добавление информации в базу данных:</p>
+<p><code> python <a class="el" href="main_8py.html">main.py</a> new_db new_database.db </code></p>
+<p>Расширение названия базы данных должно быть .db.</p>
+<h1><a class="anchor" id="autotoc_md4"></a>
+Настройки приложения</h1>
+<p>Настройки приложения находятся в файле <a href="../setting.json">setting.json</a></p><ul>
+<li>"NAME_DB" - название базы.</li>
+<li>"BOT_TOKEN" - токен телеграм бота.</li>
+<li>"WELCOME_MESSAGE" - сообщение приветствия бота.</li>
+<li>"PASSWORD_REGISTRATION" - пароль для регистрации пользователя (если не задано, то генерируется случайное число). </li>
+</ul>
+<h1><a class="anchor" id="autotoc_md5"></a>
+Заполнение базы данных (примеры)</h1>
+<h2><a class="anchor" id="autotoc_md6"></a>
+Добавление кнопок inline</h2>
+<ol type="1">
+<li>Создание меню:</li>
+</ol>
+<p>Для создания меню необходимо добавить запись в таблицу Menu: </p><table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">id_menu   </th><th class="markdownTableHeadNone">name_menu   </th><th class="markdownTableHeadNone">id_template   </th><th class="markdownTableHeadNone">id_type_menu    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">1   </td><td class="markdownTableBodyNone">1   </td><td class="markdownTableBodyNone">1   </td><td class="markdownTableBodyNone">1    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">2   </td><td class="markdownTableBodyNone">2   </td><td class="markdownTableBodyNone">2   </td><td class="markdownTableBodyNone">2    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">3   </td><td class="markdownTableBodyNone">3   </td><td class="markdownTableBodyNone">3   </td><td class="markdownTableBodyNone">3   </td></tr>
+</table>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">id_button   </th><th class="markdownTableHeadNone">name_button   </th><th class="markdownTableHeadNone">callback_data   </th><th class="markdownTableHeadNone">line   </th><th class="markdownTableHeadNone">id_event    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">1   </td><td class="markdownTableBodyNone">button1   </td><td class="markdownTableBodyNone">callback1   </td><td class="markdownTableBodyNone">1   </td><td class="markdownTableBodyNone">1    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">2   </td><td class="markdownTableBodyNone">button2   </td><td class="markdownTableBodyNone">callback2   </td><td class="markdownTableBodyNone">2   </td><td class="markdownTableBodyNone">2    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">3   </td><td class="markdownTableBodyNone">button3   </td><td class="markdownTableBodyNone">callback3   </td><td class="markdownTableBodyNone">1   </td><td class="markdownTableBodyNone">3   </td></tr>
+</table>
+<p>List_Buttons</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">id_list_buttons   </th><th class="markdownTableHeadNone">id_menu   </th><th class="markdownTableHeadNone">id_button    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">1   </td><td class="markdownTableBodyNone">1   </td><td class="markdownTableBodyNone">1    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">2   </td><td class="markdownTableBodyNone">2   </td><td class="markdownTableBodyNone">2    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">3   </td><td class="markdownTableBodyNone">3   </td><td class="markdownTableBodyNone">3   </td></tr>
+</table>
+<p>List_Void_Menu</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">id_list_void_menu   </th><th class="markdownTableHeadNone">id_menu   </th><th class="markdownTableHeadNone">id_button    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">1   </td><td class="markdownTableBodyNone">1   </td><td class="markdownTableBodyNone">1    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">2   </td><td class="markdownTableBodyNone">2   </td><td class="markdownTableBodyNone">2    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">3   </td><td class="markdownTableBodyNone">3   </td><td class="markdownTableBodyNone">3   </td></tr>
+</table>
+<ol type="1">
+<li>Связать добавленную кнопку с созданным меню:</li>
+<li>Таблицы, которые необходимо оставить без изменения (они имеют встроенные данные):<ul>
+<li>Таблица Event:</li>
+</ul>
+</li>
+</ol>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">id_event   </th><th class="markdownTableHeadNone">name_event    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">1   </td><td class="markdownTableBodyNone">Переход в другое меню    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">2   </td><td class="markdownTableBodyNone">Смена изображения вперед    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">3   </td><td class="markdownTableBodyNone">Смена изображения назад   </td></tr>
+</table>
+<ul>
+<li>Таблица Template:</li>
+</ul>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">id_template   </th><th class="markdownTableHeadNone">name_template    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">1   </td><td class="markdownTableBodyNone">Текст    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">2   </td><td class="markdownTableBodyNone">Текст с картинкой    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">3   </td><td class="markdownTableBodyNone">Изменение текста с картинкой    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">4   </td><td class="markdownTableBodyNone">Изменение текста    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">5   </td><td class="markdownTableBodyNone">Текст с файлом   </td></tr>
+</table>
+<ul>
+<li>Таблица Type_Information:</li>
+</ul>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">id_type_information   </th><th class="markdownTableHeadNone">name_type    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">1   </td><td class="markdownTableBodyNone">Текст    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">2   </td><td class="markdownTableBodyNone">Изображение    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">3   </td><td class="markdownTableBodyNone">Файл   </td></tr>
+</table>
+<ul>
+<li>Таблица Type_Menu:</li>
+</ul>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">id_type_menu   </th><th class="markdownTableHeadNone">type_menu    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">1   </td><td class="markdownTableBodyNone">Reply    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">2   </td><td class="markdownTableBodyNone">Inline   </td></tr>
+</table>
+<ul>
+<li>Таблица Category_Users:</li>
+</ul>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">id_category_users   </th><th class="markdownTableHeadNone">name_category    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">1   </td><td class="markdownTableBodyNone">Пользователь    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">2   </td><td class="markdownTableBodyNone">Администратор    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">3   </td><td class="markdownTableBodyNone">Черный список   </td></tr>
+</table>
+<h2><a class="anchor" id="autotoc_md7"></a>
+Добавление кнопок reply</h2>
+<p>kjlkjl</p>
+<h1><a class="anchor" id="autotoc_md8"></a>
+Встроенные команды бота:</h1>
+<ol type="1">
+<li>/start - начало работы с ботом.</li>
+<li>/registration - регистрация пользователя.</li>
+<li>/admin - панель администратора.</li>
+</ol>
+<h1><a class="anchor" id="autotoc_md9"></a>
+Панель администратора:</h1>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

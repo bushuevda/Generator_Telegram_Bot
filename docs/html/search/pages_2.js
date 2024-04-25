@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['связи_20таблицы_20базы_20данных_0',['Связи таблицы базы данных',['../index.html',1,'']]]
+  ['user_20s_20guide_0',['User&apos;s guide',['../md_manual__eng.html',1,'']]]
 ];
